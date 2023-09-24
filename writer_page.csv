@@ -1,187 +1,463 @@
 id,name,link
-68029,آلکسی آربوزوف,/profile/68029-aleksei-arbuzov
-6220,مارتین وادل,/profile/6220-martin-waddell
-12330,رابرت برنر,/profile/12330-robert-brenner
-26087,روح الله حسینیان,/profile/26087-%d8%b1%d9%88%d8%ad-%d8%a7%d9%84%d9%84%d9%87-%d8%ad%d8%b3%db%8c%d9%86%db%8c%d8%a7%d9%86
-23928,رضا اسماعیلی,/profile/23928-%d8%b1%d8%b6%d8%a7-%d8%a7%d8%b3%d9%85%d8%a7%d8%b9%db%8c%d9%84%db%8c
-704,مونیکا هسی,/profile/704-monica-hesse
-5839,محمد امین ریاحی,/profile/5839-mohammad-amin-riahi
-4936,کنت بلانچارد,/profile/4936-kenneth-h-blanchard
-16257,هادی سیف,/profile/16257-hadi-seif
-63375,مهدی حسینی (مهد),/profile/63375-%d9%85%d9%87%d8%af%db%8c-%d8%ad%d8%b3%db%8c%d9%86%db%8c-%d9%85%d9%87%d8%af
-3381,کالین مک کالو,/profile/3381-colleen-mccullough
-23939,عباس مهرپویا,/profile/23939-abbas-mehrpouya
-7600,جو ویتالی,/profile/7600-joe-vitale
-4627,اعظم فرخزاد,/profile/4627-azam-farokhzad
-39026,حسن رضوانی,/profile/39026-%d8%ad%d8%b3%d9%86-%d8%b1%d8%b6%d9%88%d8%a7%d9%86%db%8c
-28149,دیلان اوانس,/profile/28149-dylan-evans
-43502,آدام گرینفیلد,/profile/43502-adam-greenfield
-21652,باربارا اوکلی,/profile/21652-barbara-oakley
-47678,اولاو شوه,/profile/47678-olav-schewe
-3143,هاروارد بیزینس ریویو,/profile/3143-harvard-business-review
-15655,طاهره ایبد,/profile/15655-tahereh-ibod
-22706,ترسا بلانچ گاسول,/profile/22706-teresa-blanch-gasol
-4994,داوود غفارزادگان,/profile/4994-davud-ghaffarzadegan
-14540,شاگا هیراتا,/profile/14540-shogo-hirata
-4444,فریبا کلهر,/profile/4444-fariba-kalhor
-13819,ساندرو بوکولا,/profile/13819-sandro-bocola
-44806,اریک لوم,/profile/44806-erik-l-homme
-34850,وحید فرجی,/profile/34850-%d9%88%d8%ad%db%8c%d8%af-%d9%81%d8%b1%d8%ac%db%8c
-2675,نرگس مساوات,/profile/2675-narges-mosavat
-12606,جوزف پاتریک مک ووی,/profile/12606-j-p-mcevoy
-14205,علی زاده محمدی,/profile/14205-ali-zadeh-mohammadi
-15648,رابرت جی هگستروم,/profile/15648-robert-g-hagstrom
-43649,محسن راهنورد,/profile/43649-%d9%85%d8%ad%d8%b3%d9%86-%d8%b1%d8%a7%d9%87%d9%86%d9%88%d8%b1%d8%af
-24052,بهاره غفرانی,/profile/24052-bahareh-ghafrani
-593,ژرژ سیمنون,/profile/593-georges-simenon
-5282,جی پی واسوانی,/profile/5282-j-p-vaswani
-20337,جیمز تامس,/profile/20337-james-thomas
-32894,هاروی تامپسون,/profile/32894-harvey-thompson
-27341,والاس براک وی,/profile/27341-wallace-brockway
-29575,صادق عاشورپور,/profile/29575-%d8%b5%d8%a7%d8%af%d9%82-%d8%b9%d8%a7%d8%b4%d9%88%d8%b1%d9%be%d9%88%d8%b1
-34121,رعنا سلیمانی,/profile/34121-%d8%b1%d8%b9%d9%86%d8%a7-%d8%b3%d9%84%db%8c%d9%85%d8%a7%d9%86%db%8c
-16213,زکریا تامر,/profile/16213-zakariya-tamir
-12673,باربارا فیندلی شنک,/profile/12673-barbara-findlay-schenck
-15649,حسن اکبری,/profile/15649-hassan-akbari
-1107,میر جلال الدین کزازی,/profile/1107-mir-jalal-al-din-kazzazi
-47149,مریم طالشی,/profile/47149-%d9%85%d8%b1%db%8c%d9%85-%d8%b7%d8%a7%d9%84%d8%b4%db%8c
-43620,ولی اله کلامی زنجانی,/profile/43620-%d9%88%d9%84%db%8c-%d8%a7%d9%84%d9%87-%da%a9%d9%84%d8%a7%d9%85%db%8c-%d8%b2%d9%86%d8%ac%d8%a7%d9%86%db%8c
-39680,جورجیا بیرکت,/profile/39680-georgie-birkett
-49443,معصومه وارسته,/profile/49443-%d9%85%d8%b9%d8%b5%d9%88%d9%85%d9%87-%d9%88%d8%a7%d8%b1%d8%b3%d8%aa%d9%87
+4943,رضا زنگی آبادی,/profile/4943-%d8%b1%d8%b6%d8%a7-%d8%b2%d9%86%da%af%db%8c-%d8%a2%d8%a8%d8%a7%d8%af%db%8c
+32815,عرفان معتضد,/profile/32815-%d8%b9%d8%b1%d9%81%d8%a7%d9%86-%d9%85%d8%b9%d8%aa%d8%b6%d8%af
+18389,یوزف ویزهوفر,/profile/18389-josef-wieseh%c3%b6fer
+37624,کاظم میقانی,/profile/37624-%da%a9%d8%a7%d8%b8%d9%85-%d9%85%db%8c%d9%82%d8%a7%d9%86%db%8c
+9341,روح الله خالقی,/profile/9341-ruhollah-khaleqi
+26541,کیت گرینت,/profile/26541-keith-grint
+11484,میشائیل انده,/profile/11484-michael-ende
+31542,جواد ترشیزی,/profile/31542-%d8%ac%d9%88%d8%a7%d8%af-%d8%aa%d8%b1%d8%b4%db%8c%d8%b2%db%8c
+14929,نسرین جزنی,/profile/14929-%d9%86%d8%b3%d8%b1%db%8c%d9%86-%d8%ac%d8%b2%d9%86%db%8c
 3274,مجموعه ی نویسندگان,/profile/3274-group-of-authors
-4874,علیرضا محمودی,/profile/4874-%d8%b9%d9%84%db%8c%d8%b1%d8%b6%d8%a7-%d9%85%d8%ad%d9%85%d9%88%d8%af%db%8c
-21250,فریبرز لرستانی,/profile/21250-%d9%81%d8%b1%db%8c%d8%a8%d8%b1%d8%b2-%d9%84%d8%b1%d8%b3%d8%aa%d8%a7%d9%86%db%8c
-15381,جیم والی,/profile/15381-jim-whalley
-33078,ماریون بیه,/profile/33078-marion-billet
-11837,محمد قهرمانی,/profile/11837-%d9%85%d8%ad%d9%85%d8%af-%d9%82%d9%87%d8%b1%d9%85%d8%a7%d9%86%db%8c
-47891,مریم باباخانی,/profile/47891-%d9%85%d8%b1%db%8c%d9%85-%d8%a8%d8%a7%d8%a8%d8%a7%d8%ae%d8%a7%d9%86%db%8c
-49522,جواد صادقی,/profile/49522-%d8%ac%d9%88%d8%a7%d8%af-%d8%b5%d8%a7%d8%af%d9%82%db%8c
-56495,کی بارنهام,/profile/56495-kay-barnham
-32900,آن تری وایت,/profile/32900-anne-terry-white
-13708,فرید مر,/profile/13708-%d9%81%d8%b1%db%8c%d8%af-%d9%85%d8%b1
-905,بی ای پاریس,/profile/905-b-a-paris
-19440,سجاد گودرزی,/profile/19440-%d8%b3%d8%ac%d8%a7%d8%af-%da%af%d9%88%d8%af%d8%b1%d8%b2%db%8c
-18168,عبدالله جوادی آملی,/profile/18168-abdollah-javadi-amoli
-18041,رابرت البرتی,/profile/18041-robert-alberti
-9289,لودویگ ویتگنشتاین,/profile/9289-ludwig-wittgenstein
-5450,جلال یونسی,/profile/5450-%d8%ac%d9%84%d8%a7%d9%84-%db%8c%d9%88%d9%86%d8%b3%db%8c
-41348,سوناندو چاکرابورتی,/profile/41348-sunando-chakraborty
-9674,زهرا شاهی,/profile/9674-zahra-shahi
-2288,برایان تریسی,/profile/2288-brian-tracy
-52487,بهزاد قنسولی,/profile/52487-%d8%a8%d9%87%d8%b2%d8%a7%d8%af-%d9%82%d9%86%d8%b3%d9%88%d9%84%db%8c
-596,اچ جی ولز,/profile/596-h-g-wells
-67478,کریستین مورتون,/profile/67478-christian-morton
-26326,جیسون سگل,/profile/26326-jason-segel
-4935,سیدنی شلدون,/profile/4935-sidney-sheldon
-34930,مهدی گنجوی,/profile/34930-%d9%85%d9%87%d8%af%db%8c-%da%af%d9%86%d8%ac%d9%88%db%8c
-2437,فردریش نیچه,/profile/2437-friedrich-nietzsche
-5377,رحیم مخدومی,/profile/5377-rahim-makhdomi
-14472,مهدی جعفری,/profile/14472-mehdi-jafari
-6245,فاضل ترکمن,/profile/6245-fazel-torkaman
-29761,منوچهر آریانپورکاشانی,/profile/29761-%d9%85%d9%86%d9%88%da%86%d9%87%d8%b1-%d8%a2%d8%b1%db%8c%d8%a7%d9%86%d9%be%d9%88%d8%b1%da%a9%d8%a7%d8%b4%d8%a7%d9%86%db%8c
-2276,نیتان فایلر,/profile/2276-nathan-filer
-53084,عزت الله عزتی,/profile/53084-%d8%b9%d8%b2%d8%aa-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d8%b2%d8%aa%db%8c
-3644,راحیل ذبیحی,/profile/3644-rahil-zabihi
-69871,وینچنزو مورابیتو,/profile/69871-vincenzo-morabito
-29257,سارا راش,/profile/29257-sara-raasch
-56393,هادی فهیمی,/profile/56393-%d9%87%d8%a7%d8%af%db%8c-%d9%81%d9%87%db%8c%d9%85%db%8c
-5604,رضا جولایی,/profile/5604-reza-jolaei
-35728,سیدحسن مطیعی لنگرودی,/profile/35728-%d8%b3%db%8c%d8%af%d8%ad%d8%b3%d9%86-%d9%85%d8%b7%db%8c%d8%b9%db%8c-%d9%84%d9%86%da%af%d8%b1%d9%88%d8%af%db%8c
-24425,شارل لویی هانون,/profile/24425-charles-louis-hanon
-20922,دیدیه دنینکس,/profile/20922-didier-daeninckx
-657,ادوارد مورگان فورستر,/profile/657-e-m-forster
-45830,محمد حسینی مقدم,/profile/45830-%d9%85%d8%ad%d9%85%d8%af-%d8%ad%d8%b3%db%8c%d9%86%db%8c-%d9%85%d9%82%d8%af%d9%85
-32898,پروکوپیوس,/profile/32898-procopius
-20118,ولفگانگ بورشرت,/profile/20118-wolfgang-borchert
-2278,شهلا انسانی,/profile/2278-shahla-ensani
-40975,الناز هاشم منیری,/profile/40975-%d8%a7%d9%84%d9%86%d8%a7%d8%b2-%d9%87%d8%a7%d8%b4%d9%85-%d9%85%d9%86%db%8c%d8%b1%db%8c
-24101,آندری گرومیکو,/profile/24101-andrei-gromyko
+26997,آن جردن,/profile/26997-anne-jordan
+14319,تری دیری,/profile/14319-terry-deary
+4985,بنفشه حجازی,/profile/4985-banafshe-hejazi
+11871,دانیل اسمیت,/profile/11871-daniel-smith
+17747,حسن چابک,/profile/17747-hasan-chabok
+7713,واتسلاف هاول,/profile/7713-v%c3%a1clav-havel
+52921,یحیی معروف,/profile/52921-%db%8c%d8%ad%db%8c%db%8c-%d9%85%d8%b9%d8%b1%d9%88%d9%81
+26943,باب پراکتور,/profile/26943-bob-proctor
+4690,ابوالفضل زرویی نصرآباد,/profile/4690-%d8%a7%d8%a8%d9%88%d8%a7%d9%84%d9%81%d8%b6%d9%84-%d8%b2%d8%b1%d9%88%db%8c%db%8c-%d9%86%d8%b5%d8%b1%d8%a2%d8%a8%d8%a7%d8%af
+5185,نسیم عرب امیری,/profile/5185-nasim-arab-amiri
+24381,زهره یزدان پناه قره تپه,/profile/24381-%d8%b2%d9%87%d8%b1%d9%87-%db%8c%d8%b2%d8%af%d8%a7%d9%86-%d9%be%d9%86%d8%a7%d9%87-%d9%82%d8%b1%d9%87-%d8%aa%d9%be%d9%87
+5833,محمدقلی مجد,/profile/5833-mohammadgholi-majd
+1045,اسپنسر جانسون,/profile/1045-spencer-johnson
+279,ویلیام فاکنر,/profile/279-william-faulkner
+8766,آر ال استاین,/profile/8766-r-l-stine
+23746,دیزی مدوز,/profile/23746-daisy-meadows
+54923,آلن آراگون,/profile/54923-alan-aragon
+18453,عباس رحیمی,/profile/18453-abbas-rahimi
+13036,سلمان علی یاری بابلقانی,/profile/13036-salman-aliyari
+25589,مایک گلداسمیت,/profile/25589-mike-goldsmith
+42082,اشرف شبانی,/profile/42082-ashraf-shabani
+7801,ال جی اسمیت,/profile/7801-l-j-smith
+30319,جعفر رزمی,/profile/30319-%d8%ac%d8%b9%d9%81%d8%b1-%d8%b1%d8%b2%d9%85%db%8c
+16240,عباس تربن,/profile/16240-%d8%b9%d8%a8%d8%a7%d8%b3-%d8%aa%d8%b1%d8%a8%d9%86
+66279,علی تیموری,/profile/66279-%d8%b9%d9%84%db%8c-%d8%aa%db%8c%d9%85%d9%88%d8%b1%db%8c
+8378,هنری جیمز,/profile/8378-henry-james
+67464,هیلاری گوپنیک,/profile/67464-hilary-gopnik
+20859,محمدتقی فاضل میبدی,/profile/20859-mohammad-taghi-fazel-meybodi
+42002,پیمان فخاریان,/profile/42002-%d9%be%db%8c%d9%85%d8%a7%d9%86-%d9%81%d8%ae%d8%a7%d8%b1%db%8c%d8%a7%d9%86
+56466,کریستین فوکس,/profile/56466-christian-fuchs
+16947,مکس لوکیدو,/profile/16947-max-lucado
+4602,میرچا الیاده,/profile/4602-mircea-eliade
+52173,گلوریا اوربوش,/profile/52173-gloria-averbuch
+53005,حسین لطف آبادی,/profile/53005-%d8%ad%d8%b3%db%8c%d9%86-%d9%84%d8%b7%d9%81-%d8%a2%d8%a8%d8%a7%d8%af%db%8c
+5241,ع پاشایی,/profile/5241-%d8%b9-%d9%be%d8%a7%d8%b4%d8%a7%db%8c%db%8c
+55632,رضا خواجه نوری,/profile/55632-%d8%b1%d8%b6%d8%a7-%d8%ae%d9%88%d8%a7%d8%ac%d9%87-%d9%86%d9%88%d8%b1%db%8c
+5938,آگوست ویلسن,/profile/5938-august-wilson
+41551,گانر اسکربک,/profile/41551-gunnar-skirbekk
+70250,انریکو چرولی,/profile/70250-enrico-cerulli
+26722,فاطمه مرادی,/profile/26722-fatemeh-moradi
+4965,علی حیدری,/profile/4965-ali-heidari
+20743,محمد انتظاری,/profile/20743-%d9%85%d8%ad%d9%85%d8%af-%d8%a7%d9%86%d8%aa%d8%b8%d8%a7%d8%b1%db%8c
+65522,محمدرضا عابدینی,/profile/65522-%d9%85%d8%ad%d9%85%d8%af%d8%b1%d8%b6%d8%a7-%d8%b9%d8%a7%d8%a8%d8%af%db%8c%d9%86%db%8c
+2604,محمد علی جمال زاده,/profile/2604-mohamad-ali-jamalzadeh
+2204,جلال الدین محمد بلخی(مولانا),/profile/2204-rumi
+54705,مانوئل الخاندرو کاردنته,/profile/54705-manuel-alejandro-cardenete
+5598,تزوتان تودوروف,/profile/5598-tzvetan-todorov
+31407,جسی امزپک,/profile/31407-jesse-emspak
+29117,سوفی دیوری,/profile/29117-sophie-divry
+14647,بل مونی,/profile/14647-bel-mooney
 12762,مارگارت پیترسون هدیکس,/profile/12762-margaret-peterson-haddix
-32758,کارن کتس,/profile/32758-karen-katz
-13903,هادی حیدری,/profile/13903-hadi-heidari
-9264,حسین استادولی,/profile/9264-%d8%ad%d8%b3%db%8c%d9%86-%d8%a7%d8%b3%d8%aa%d8%a7%d8%af%d9%88%d9%84%db%8c
-13107,استیون ایلز,/profile/13107-stephen-eales
-20968,ویلیام برایان آرتور,/profile/20968-w-brian-arthur
-4675,فرخنده موحد راد,/profile/4675-farkhondeh-movahed-rad
-21463,نیکزاد نورپناه,/profile/21463-%d9%86%db%8c%da%a9%d8%b2%d8%a7%d8%af-%d9%86%d9%88%d8%b1%d9%be%d9%86%d8%a7%d9%87
-470,مو یان,/profile/470-mo-yan
-41307,دیوید جی هند,/profile/41307-david-j-hand
-563,داریوش مهرجویی,/profile/563-darioush-mehrjooei
-319,آندره ژید,/profile/319-andr%c3%a9-gide
-9727,روبرتو سانتیاگو,/profile/9727-roberto-santiago
-32343,حامد سلیمان زاده,/profile/32343-%d8%ad%d8%a7%d9%85%d8%af-%d8%b3%d9%84%db%8c%d9%85%d8%a7%d9%86-%d8%b2%d8%a7%d8%af%d9%87
-20757,ثریا پناهی,/profile/20757-soraya-panahi
-26775,رودلف ویتکوور,/profile/26775-rudolf-wittkower
-3220,پیتر هاندکه,/profile/3220-peter-handke
-46356,مایکل آدامز,/profile/46356-michael-adams
-6066,محمد ابن علی ابن عربی,/profile/6066-%d9%85%d8%ad%d9%85%d8%af-%d8%a7%d8%a8%d9%86-%d8%b9%d9%84%db%8c-%d8%a7%d8%a8%d9%86-%d8%b9%d8%b1%d8%a8%db%8c
-14577,والتر فاستر,/profile/14577-walter-thomas-foster
-66991,ویتالیک بوترین,/profile/66991-buterin-vitalik
-13419,کارینا یان گلازر,/profile/13419-karina-yan-glaser
-66902,باربارا اوکانر,/profile/66902-barbara-o-connor
-38066,هاتف شعبان نژاد,/profile/38066-%d9%87%d8%a7%d8%aa%d9%81-%d8%b4%d8%b9%d8%a8%d8%a7%d9%86-%d9%86%da%98%d8%a7%d8%af
-6598,عمادبن محمد الثغری,/profile/6598-%d8%b9%d9%85%d8%a7%d8%af%d8%a8%d9%86-%d9%85%d8%ad%d9%85%d8%af-%d8%a7%d9%84%d8%ab%d8%ba%d8%b1%db%8c
-4899,دیوید هاروی,/profile/4899-david-harvey
-2229,علیرضا سیف الدینی,/profile/2229-alireza-seyf-al-dini
-41141,مجید طامه,/profile/41141-%d9%85%d8%ac%db%8c%d8%af-%d8%b7%d8%a7%d9%85%d9%87
-15575,محمد گودرزی دهریزی,/profile/15575-mohammad-goodarzi-dehrizi
-5243,آگ ماندینو,/profile/5243-og-mandino
-5234,ارلند لو,/profile/5234-erlend-loe
-51888,والری سینلنیلکوف,/profile/51888-valeriy-sinelnikov
-47860,داریوش فریدونی برزآباد,/profile/47860-%d8%af%d8%a7%d8%b1%db%8c%d9%88%d8%b4-%d9%81%d8%b1%db%8c%d8%af%d9%88%d9%86%db%8c-%d8%a8%d8%b1%d8%b2%d8%a2%d8%a8%d8%a7%d8%af
-44001,آنتونی جی استاسنباک,/profile/44001-anthony-j-steinbock
-7700,غلامرضا رضایی,/profile/7700-%d8%ba%d9%84%d8%a7%d9%85%d8%b1%d8%b6%d8%a7-%d8%b1%d8%b6%d8%a7%db%8c%db%8c
-10373,دن میلمن,/profile/10373-dan-millman
-19276,کومن,/profile/19276-kumon-publishing
-13478,آژیا سیترو,/profile/13478-asia-citro
-33617,ماسیمو پیلیوچی,/profile/33617-massimo-pigliucci
-12261,مایکل ای پورتر,/profile/12261-michael-e-porter
-13384,کاترین ویس,/profile/13384-catherine-vase
-5006,فرشاد نجفی پور,/profile/5006-%d9%81%d8%b1%d8%b4%d8%a7%d8%af-%d9%86%d8%ac%d9%81%db%8c-%d9%be%d9%88%d8%b1
-55062,نیل شافر,/profile/55062-neal-schaffer
-8880,جمال میرصادقی,/profile/8880-jamal-mirsadeghi
-3719,مهدی سجودی مقدم,/profile/3719-mehdi-sojoudi-moghaddam
-5458,مژگان مظفری,/profile/5458-%d9%85%da%98%da%af%d8%a7%d9%86-%d9%85%d8%b8%d9%81%d8%b1%db%8c
-11192,فریده خلف,/profile/11192-farida-khalaf
-66882,آلن جی دیباس,/profile/66882-allen-g-debus
-9342,آدام هارت دیویس,/profile/9342-adam-hart-davis
-12603,ضیاءالدین سردار,/profile/12603-ziauddin-sardar
-37631,مایکل مارتنسن,/profile/37631-michael-martensen
-13780,فاستو گیلبرتی,/profile/13780-fausto-gilberti
-5423,علی اصغر مصلح,/profile/5423-ali-asghar-mosleh
-5337,علیرضا قائمی نیا,/profile/5337-%d8%b9%d9%84%db%8c%d8%b1%d8%b6%d8%a7-%d9%82%d8%a7%d8%a6%d9%85%db%8c-%d9%86%db%8c%d8%a7
-12368,محسن گودرزی,/profile/12368-mohsen-goudarzi
-54713,عبدالمحمد کاظمی پور,/profile/54713-%d8%b9%d8%a8%d8%af%d8%a7%d9%84%d9%85%d8%ad%d9%85%d8%af-%da%a9%d8%a7%d8%b8%d9%85%db%8c-%d9%be%d9%88%d8%b1
-16874,فرید احمدی,/profile/16874-farid-ahmadi
-5779,مژگان شیخی,/profile/5779-%d9%85%da%98%da%af%d8%a7%d9%86-%d8%b4%db%8c%d8%ae%db%8c
-441,استیون کینگ,/profile/441-stephen-king
-20552,محمدباقر بهبودی,/profile/20552-mohammad-bagher-behboudi
-41463,فریدون پیشواپور,/profile/41463-%d9%81%d8%b1%db%8c%d8%af%d9%88%d9%86-%d9%be%db%8c%d8%b4%d9%88%d8%a7%d9%be%d9%88%d8%b1
-17583,جیمز هال,/profile/17583-james-a-hall
+51241,فیل کیم,/profile/51241-phil-kim
 3293,زهرا موسوی,/profile/3293-zahra-mousavi
+41795,بهروز واثقی,/profile/41795-%d8%a8%d9%87%d8%b1%d9%88%d8%b2-%d9%88%d8%a7%d8%ab%d9%82%db%8c
+9676,عباس سلیمی آنگیل,/profile/9676-abbas-salimi-angil
+27447,آناتولی کارپف,/profile/27447-anatoly-karpov
+35625,عبدالجبار سروش,/profile/35625-%d8%b9%d8%a8%d8%af%d8%a7%d9%84%d8%ac%d8%a8%d8%a7%d8%b1-%d8%b3%d8%b1%d9%88%d8%b4
+29970,عبدالله علیخانی,/profile/29970-%d8%b9%d8%a8%d8%af%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%db%8c%d8%ae%d8%a7%d9%86%db%8c
+18041,رابرت البرتی,/profile/18041-robert-alberti
+30587,بروس فیشر,/profile/30587-bruce-fisher
+3284,ویسواوا شیمبورسکا,/profile/3284-wis%c5%82awa-szymborska
+8078,بوریس گرویس,/profile/8078-boris-groys
+10463,سلیم باشکوه,/profile/10463-salim-bashokouh
+16280,محمدرضا شهبازی,/profile/16280-%d9%85%d8%ad%d9%85%d8%af%d8%b1%d8%b6%d8%a7-%d8%b4%d9%87%d8%a8%d8%a7%d8%b2%db%8c
+70676,پرویز ملکی,/profile/70676-%d9%be%d8%b1%d9%88%db%8c%d8%b2-%d9%85%d9%84%da%a9%db%8c
+19730,مهناز عسگری,/profile/19730-%d9%85%d9%87%d9%86%d8%a7%d8%b2-%d8%b9%d8%b3%da%af%d8%b1%db%8c
+2288,برایان تریسی,/profile/2288-brian-tracy
+12059,فتحی ساسی,/profile/12059-fathi-sasi
+3464,محمدرضا شمس,/profile/3464-mohammadreza-shams
+46650,مهری علی عسگری (بانو),/profile/46650-%d9%85%d9%87%d8%b1%db%8c-%d8%b9%d9%84%db%8c-%d8%b9%d8%b3%da%af%d8%b1%db%8c-%d8%a8%d8%a7%d9%86%d9%88
+25587,درک میلن,/profile/25587-derek-milne
+25456,الیزابت کوییپرز,/profile/25456-elizabeth-kuipers
+33553,رابین برمن,/profile/33553-robin-berman
+3026,سعید نفیسی,/profile/3026-saeid-nafisi
+16376,مل لیسستر,/profile/16376-mal-leicester
+1050,بن هوروویتز,/profile/1050-ben-horowitz
+23114,سارا شیرازی,/profile/23114-sarah-shirazi
+56009,فرزانه اصفهانی,/profile/56009-%d9%81%d8%b1%d8%b2%d8%a7%d9%86%d9%87-%d8%a7%d8%b5%d9%81%d9%87%d8%a7%d9%86%db%8c
+11352,محمدرضا توکلی صابری,/profile/11352-mohammadreza-tavakoli
+7784,اصغر الهی,/profile/7784-asghar-elahi
+9541,جیم الخلیلی,/profile/9541-jim-al-khalili
+4926,فردریک چارلز کاپلستون,/profile/4926-frederick-copleston
+35166,پرافول شارما,/profile/35166-prafull-sharma
+48125,ایرینا ویکتورنا استپانوا,/profile/48125-irina-viktorovna-stepanova
+3066,مکس تگمارک,/profile/3066-max-tegmark
+304,نیکول کراوس,/profile/304-nicole-krauss
+423,یوستین گوردر,/profile/423-jostein-gaarder
+63619,طوبی خوه,/profile/63619-%d8%b7%d9%88%d8%a8%db%8c-%d8%ae%d9%88%d9%87
+14795,مسعود نیلی,/profile/14795-masoud-nili
+17616,لورا جی کولکر,/profile/17616-laura-j-colker
+4842,ابو عبدالله جعفربن محمد رودکی,/profile/4842-rudaki
+38123,سعید شفیعی,/profile/38123-%d8%b3%d8%b9%db%8c%d8%af-%d8%b4%d9%81%db%8c%d8%b9%db%8c
+41152,اندرو والز,/profile/41152-andrew-f-walls
+34168,مولی مهدی نراقی,/profile/34168-%d9%85%d9%88%d9%84%db%8c-%d9%85%d9%87%d8%af%db%8c-%d9%86%d8%b1%d8%a7%d9%82%db%8c
+44713,پل کلاوال,/profile/44713-paul-claval
+24668,هوشنگ صهبا,/profile/24668-houshang-sahba
+10047,سریا داودی حموله,/profile/10047-seris-davoudi
+38757,پیپا نوریس,/profile/38757-pippa-norris
+4301,جان سی مکسول,/profile/4301-john-calvin-maxwell
+2659,اریک برن,/profile/2659-eric-berne
+4591,جلیل صفربیگی,/profile/4591-jalil-safarneigi
+3438,نایجل واربرتون,/profile/3438-nigel-warburton
+9505,داوسان چرچ,/profile/9505-dawson-church
+4348,نادر ابراهیمی,/profile/4348-nader-ebrahimi
+33751,مژگان گروه ای,/profile/33751-%d9%85%da%98%da%af%d8%a7%d9%86-%da%af%d8%b1%d9%88%d9%87-%d8%a7%db%8c
+5385,بابک احمدی,/profile/5385-babak-ahmadi
+10890,عباس جهانگیریان,/profile/10890-abbas-jahangiri
+4824,فیض شریفی,/profile/4824-%d9%81%db%8c%d8%b6-%d8%b4%d8%b1%db%8c%d9%81%db%8c
+24010,جوزف د کتنر‏‫,/profile/24010-joseph-ketner
+10076,احسان محمدی,/profile/10076-ehsan-mohammadi
+66583,عباس حضرت,/profile/66583-%d8%b9%d8%a8%d8%a7%d8%b3-%d8%ad%d8%b6%d8%b1%d8%aa
+33991,مسعود میناوی,/profile/33991-%d9%85%d8%b3%d8%b9%d9%88%d8%af-%d9%85%db%8c%d9%86%d8%a7%d9%88%db%8c
+55995,ولادیمیر سوتیف,/profile/55995-vladimir-suteev
+14660,ژان موزی,/profile/14660-jean-muzi
+14661,جو چاندلر هریس,/profile/14661-joel-chandler-harris
+52332,قائم عظیمی یانچشمه,/profile/52332-%d9%82%d8%a7%d8%a6%d9%85-%d8%b9%d8%b8%db%8c%d9%85%db%8c-%db%8c%d8%a7%d9%86%da%86%d8%b4%d9%85%d9%87
+22157,امانوئلا تودوا,/profile/22157-emanuela-todeva
+25522,آوا تی آلبرشت,/profile/25522-ava-t-albrecht
+12476,محمدامین رسول زاده,/profile/12476-mammad-amin-rasulzadeh
+27334,پریسا شادقزوینی,/profile/27334-%d9%be%d8%b1%db%8c%d8%b3%d8%a7-%d8%b4%d8%a7%d8%af%d9%82%d8%b2%d9%88%db%8c%d9%86%db%8c
+3979,زینب علیزاده,/profile/3979-zeinab-alizadeh
+1025,امی کادی,/profile/1025-amy-cuddy
+42000,بابک رستمی,/profile/42000-%d8%a8%d8%a7%d8%a8%da%a9-%d8%b1%d8%b3%d8%aa%d9%85%db%8c
+25674,شهرام گیل آبادی,/profile/25674-%d8%b4%d9%87%d8%b1%d8%a7%d9%85-%da%af%db%8c%d9%84-%d8%a2%d8%a8%d8%a7%d8%af%db%8c
+44118,پل راکت,/profile/44118-paul-rockett
+20318,محمد حسینی بهشتی,/profile/20318-%d9%85%d8%ad%d9%85%d8%af-%d8%ad%d8%b3%db%8c%d9%86%db%8c-%d8%a8%d9%87%d8%b4%d8%aa%db%8c
+8235,نقی سلیمانی,/profile/8235-naghi-soleimani
+7139,علیرضا ارواحی,/profile/7139-alireza-avahi
+18161,حمید ضیایی پرور,/profile/18161-hamid-ziaee-parvar
+703,زیگموند فروید,/profile/703-sigmund-freud
+8690,نله نویهاوس,/profile/8690-nele-neuhaus
+26273,رویا جوانی,/profile/26273-%d8%b1%d9%88%db%8c%d8%a7-%d8%ac%d9%88%d8%a7%d9%86%db%8c
+22864,صالح تسبیحی,/profile/22864-%d8%b5%d8%a7%d9%84%d8%ad-%d8%aa%d8%b3%d8%a8%db%8c%d8%ad%db%8c
 3292,مریم اسلامی,/profile/3292-maryam-eslami
-47430,دامون زاغی,/profile/47430-%d8%af%d8%a7%d9%85%d9%88%d9%86-%d8%b2%d8%a7%d8%ba%db%8c
-11512,علی بلوکباشی,/profile/11512-%d8%b9%d9%84%db%8c-%d8%a8%d9%84%d9%88%da%a9%d8%a8%d8%a7%d8%b4%db%8c
-38955,ایوان آنتیک,/profile/38955-ivan-antic
-24325,جیمز بال,/profile/24325-james-ball
-48116,مهناز رشید حسین پور,/profile/48116-%d9%85%d9%87%d9%86%d8%a7%d8%b2-%d8%b1%d8%b4%db%8c%d8%af-%d8%ad%d8%b3%db%8c%d9%86-%d9%be%d9%88%d8%b1
-4595,سید مهدی شجاعی,/profile/4595-%d8%b3%db%8c%d8%af-%d9%85%d9%87%d8%af%db%8c-%d8%b4%d8%ac%d8%a7%d8%b9%db%8c
-8645,عباس مصلّی نژاد,/profile/8645-abbas-mosalanejad
-67810,سید مهدی خطیب,/profile/67810-%d8%b3%db%8c%d8%af-%d9%85%d9%87%d8%af%db%8c-%d8%ae%d8%b7%db%8c%d8%a8
-48819,حسین سیدی,/profile/48819-%d8%ad%d8%b3%db%8c%d9%86-%d8%b3%db%8c%d8%af%db%8c
-34078,مسعود لک,/profile/34078-%d9%85%d8%b3%d8%b9%d9%88%d8%af-%d9%84%da%a9
-53539,پرویز آزادی,/profile/53539-%d9%be%d8%b1%d9%88%db%8c%d8%b2-%d8%a2%d8%b2%d8%a7%d8%af%db%8c
-27264,جان لیلند,/profile/27264-john-leland
-17271,تونی گراس,/profile/17271-tony-grass
-7641,انید بلایتون,/profile/7641-enid-blyton
-39794,تانیا لندمن,/profile/39794-tanya-landman
-14552,ازوپ,/profile/14552-aesop
-8223,معین فرخی,/profile/8223-%d9%85%d8%b9%db%8c%d9%86-%d9%81%d8%b1%d8%ae%db%8c
-20428,جواد میری,/profile/20428-javad-miri
-4682,بلقیس سلیمانی,/profile/4682-belgheys-soleimani
-22975,محمد رحمانیان,/profile/22975-%d9%85%d8%ad%d9%85%d8%af-%d8%b1%d8%ad%d9%85%d8%a7%d9%86%db%8c%d8%a7%d9%86
-22621,مایکل سی ریچرت,/profile/22621-michael-c-reichert
-3166,ایوانکا ترامپ,/profile/3166-ivanka-trump
-19773,انیسکا بسکاپ,/profile/19773-agnieszka-biskup
-9801,بی جی نواک,/profile/9801-b-j-novak
-9113,جیمز تربر,/profile/9113-james-thurber
+34283,آناستازیا نوویک,/profile/34283-anastasia-novykh
+51541,هادی صادقی,/profile/51541-%d9%87%d8%a7%d8%af%db%8c-%d8%b5%d8%a7%d8%af%d9%82%db%8c
+56252,دبورا لوی,/profile/56252-deborah-levy
+23367,ایرج پارسی نژاد,/profile/23367-%d8%a7%db%8c%d8%b1%d8%ac-%d9%be%d8%a7%d8%b1%d8%b3%db%8c-%d9%86%da%98%d8%a7%d8%af
+10659,جی بی پریستلی,/profile/10659-j-b-priestley
+63616,فاطمه کمالی,/profile/63616-%d9%81%d8%a7%d8%b7%d9%85%d9%87-%da%a9%d9%85%d8%a7%d9%84%db%8c
+18129,ویلیام باک,/profile/18129-william-buck
+3644,راحیل ذبیحی,/profile/3644-rahil-zabihi
+30638,شریل ابرلی,/profile/30638-sheryl-eberly
+4377,جان گوردون,/profile/4377-jon-gordon
+17090,محمد مهاجرانی,/profile/17090-%d9%85%d8%ad%d9%85%d8%af-%d9%85%d9%87%d8%a7%d8%ac%d8%b1%d8%a7%d9%86%db%8c
+16862,سو هادفیلد,/profile/16862-sue-hadfield
+18123,مانلیو آرگه تا,/profile/18123-manlio-argueta
+403,محمدرضا پارسایار,/profile/403-%d9%85%d8%ad%d9%85%d8%af%d8%b1%d8%b6%d8%a7-%d9%be%d8%a7%d8%b1%d8%b3%d8%a7%db%8c%d8%a7%d8%b1
+14092,جان پی گلنون,/profile/14092-john-p-glennon
+10416,کریس لان,/profile/10416-chris-lawn
+37866,ایرج اله دادی,/profile/37866-%d8%a7%db%8c%d8%b1%d8%ac-%d8%a7%d9%84%d9%87-%d8%af%d8%a7%d8%af%db%8c
+710,آلن دوباتن,/profile/710-alain-de-botton
+48623,سمیه پورمنفرد,/profile/48623-%d8%b3%d9%85%db%8c%d9%87-%d9%be%d9%88%d8%b1%d9%85%d9%86%d9%81%d8%b1%d8%af
+25142,وس لیندن,/profile/25142-wes-linden
+12988,باب تورس,/profile/12988-bob-torres
+16239,اسفندیار معتمدی,/profile/16239-esfandiar-motamedi
+43536,فاطمه حسینی اسحق آبادی,/profile/43536-%d9%81%d8%a7%d8%b7%d9%85%d9%87-%d8%ad%d8%b3%db%8c%d9%86%db%8c-%d8%a7%d8%b3%d8%ad%d9%82-%d8%a2%d8%a8%d8%a7%d8%af%db%8c
+29322,میرعبدالحسین نقیب زاده جلالی,/profile/29322-%d9%85%db%8c%d8%b1%d8%b9%d8%a8%d8%af%d8%a7%d9%84%d8%ad%d8%b3%db%8c%d9%86-%d9%86%d9%82%db%8c%d8%a8-%d8%b2%d8%a7%d8%af%d9%87-%d8%ac%d9%84%d8%a7%d9%84%db%8c
+45957,رابرت کوتیتا,/profile/45957-robert-a-cutietta
+21405,ترز برترا,/profile/21405-th%c3%a9r%c3%a8se-bertherat
+41704,ایرج بهرامی,/profile/41704-%d8%a7%db%8c%d8%b1%d8%ac-%d8%a8%d9%87%d8%b1%d8%a7%d9%85%db%8c
+55880,پژوهشکده مطالعات راهبردی,/profile/55880-%d9%be%da%98%d9%88%d9%87%d8%b4%da%a9%d8%af%d9%87-%d9%85%d8%b7%d8%a7%d9%84%d8%b9%d8%a7%d8%aa-%d8%b1%d8%a7%d9%87%d8%a8%d8%b1%d8%af%db%8c
+28697,محمدباقر شریعتی سبزواری,/profile/28697-%d9%85%d8%ad%d9%85%d8%af%d8%a8%d8%a7%d9%82%d8%b1-%d8%b4%d8%b1%db%8c%d8%b9%d8%aa%db%8c-%d8%b3%d8%a8%d8%b2%d9%88%d8%a7%d8%b1%db%8c
+46546,علیرضا هادی پوربرزگر,/profile/46546-%d8%b9%d9%84%db%8c%d8%b1%d8%b6%d8%a7-%d9%87%d8%a7%d8%af%db%8c-%d9%be%d9%88%d8%b1%d8%a8%d8%b1%d8%b2%da%af%d8%b1
+5181,جمال اکرمی,/profile/5181-%d8%ac%d9%85%d8%a7%d9%84-%d8%a7%da%a9%d8%b1%d9%85%db%8c
+39681,جس استکهام,/profile/39681-jess-stockham
+70159,آلن اسکینز,/profile/70159-allen-eskens
+17306,دیان دیسلورایان,/profile/17306-dyanne-disalvo-ryan
+26020,جمشید شیخ لارآبادی,/profile/26020-jamshid-sheykh
+12,پاتریک مودیانو,/profile/12-patrick-modiano
+345,یاکوب آرژونی,/profile/345-jakob-arjouni
+26422,جیمز وارن,/profile/26422-james-warren
+681,راینر ماریا ریلکه,/profile/681-rainer-maria-rilke
+31297,مری آماتو,/profile/31297-mary-amato
+33432,فرانک دارابانت,/profile/33432-frank-darabont
+24833,رها زادمهر,/profile/24833-%d8%b1%d9%87%d8%a7-%d8%b2%d8%a7%d8%af%d9%85%d9%87%d8%b1
+85,رومن رولان,/profile/85-romain-rolland
+19936,برنیس رنو,/profile/19936-b%c3%a9r%c3%a9nice-reynaud
+12295,اشو,/profile/12295-osho
+12365,پل لوران اسون,/profile/12365-paul-laurent-assoun
+8561,صدرالدین عینی,/profile/8561-sadriddin-ayni
+2885,اریک امانوئل اشمیت,/profile/2885-%c3%a9ric-emmanuel-schmitt
+7887,ماتیو مک کی,/profile/7887-matthew-mckay
+4819,احسان مظلومی,/profile/4819-ehsan-mazlumi
+27270,ژرژ شوله,/profile/27270-georges-chaulet
+64238,مسعود چقازردی,/profile/64238-%d9%85%d8%b3%d8%b9%d9%88%d8%af-%da%86%d9%82%d8%a7%d8%b2%d8%b1%d8%af%db%8c
+9589,محمد مساوات,/profile/9589-mohammad-mosavat
+22966,بئاتریس اوسس,/profile/22966-beatriz-os%c3%a9s
+13412,آری چانگ,/profile/13412-arree-chung
+9185,کارل پوپر,/profile/9185-karl-popper
+17119,فاطمه ایمانی,/profile/17119-fatemeh-imani
+26833,ایمان افشاریان,/profile/26833-%d8%a7%db%8c%d9%85%d8%a7%d9%86-%d8%a7%d9%81%d8%b4%d8%a7%d8%b1%db%8c%d8%a7%d9%86
+63132,دیوید شافر,/profile/63132-david-r-shaffer
+14429,مصطفی خرامان,/profile/14429-mostafa-kharaman
+3139,بهنام شهائی,/profile/3139-%d8%a8%d9%87%d9%86%d8%a7%d9%85-%d8%b4%d9%87%d8%a7%d8%a6%db%8c
+35976,احمد جعفرنژاد,/profile/35976-%d8%a7%d8%ad%d9%85%d8%af-%d8%ac%d8%b9%d9%81%d8%b1%d9%86%da%98%d8%a7%d8%af
+27949,آلن نری,/profile/27949-alan-norrie
+24046,رویا رستمی,/profile/24046-roya-rostami
+8268,فردیناند فون شیراخ,/profile/8268-ferdinand-von-schirach
+4114,وین دایر,/profile/4114-wayne-walter-dyer
+12215,آریستو فانیس,/profile/12215-aristophanes
+11876,کاوه فرخ,/profile/11876-kaveh-farrokh
+932,تنسی ویلیامز,/profile/932-tennessee-williams
+7524,یو نسبو,/profile/7524-jo-nesb%c3%b8
+20496,ریچارد ویلیامز,/profile/20496-richard-williams
+7696,جواد افهمی,/profile/7696-javad-afhami
+3625,محمود نامنی,/profile/3625-%d9%85%d8%ad%d9%85%d9%88%d8%af-%d9%86%d8%a7%d9%85%d9%86%db%8c
+49904,کریستوفر ای کوپر,/profile/49904-christopher-e-cooper
+41331,مظفرالدین شاه قاجار,/profile/41331-%d9%85%d8%b8%d9%81%d8%b1%d8%a7%d9%84%d8%af%db%8c%d9%86-%d8%b4%d8%a7%d9%87-%d9%82%d8%a7%d8%ac%d8%a7%d8%b1
+37229,دیوید ال راجرز,/profile/37229-david-l-rogers
+3712,گروه مولفان,/profile/3712-%da%af%d8%b1%d9%88%d9%87-%d9%85%d9%88%d9%84%d9%81%d8%a7%d9%86
+18329,محمدعلی جاودان,/profile/18329-%d9%85%d8%ad%d9%85%d8%af%d8%b9%d9%84%db%8c-%d8%ac%d8%a7%d9%88%d8%af%d8%a7%d9%86
+5156,تکین حمزه لو,/profile/5156-%d8%aa%da%a9%db%8c%d9%86-%d8%ad%d9%85%d8%b2%d9%87-%d9%84%d9%88
+22172,محمود زند مقدم,/profile/22172-%d9%85%d8%ad%d9%85%d9%88%d8%af-%d8%b2%d9%86%d8%af-%d9%85%d9%82%d8%af%d9%85
+520,باربارا پارک,/profile/520-barbara-park
+40706,رالف مرکل,/profile/40706-rolf-merkle
+66946,گریسی کیم,/profile/66946-graci-kim
+5784,علی باباجانی,/profile/5784-ali-babajani
+4931,عبدالحسین آذرنگ,/profile/4931-%d8%b9%d8%a8%d8%af%d8%a7%d9%84%d8%ad%d8%b3%db%8c%d9%86-%d8%a2%d8%b0%d8%b1%d9%86%da%af
+14530,عزت الله الوندی,/profile/14530-ezzatullah-alvandi
+8616,محمود درویش,/profile/8616-mahmoud-darwish
+52568,بالبر دیلون,/profile/52568-b-s-dhillon
+29825,اسا لیند,/profile/29825-%c3%a5sa-lind
+44613,تومریس اویار,/profile/44613-tomris-uyar
+487,کریس گرابنستاین,/profile/487-chris-grabenstein
+26427,ژیل تیبو,/profile/26427-gilles-tibo
+9912,جرج دبلیو برنز,/profile/9912-george-w-burns
+48638,زهرا کرمی,/profile/48638-%d8%b2%d9%87%d8%b1%d8%a7-%da%a9%d8%b1%d9%85%db%8c
+2417,جورج ساندرز,/profile/2417-george-saunders
+43232,جانی مارسیانو,/profile/43232-johnny-marciano
+51285,فائزه جعفری نجفی,/profile/51285-%d9%81%d8%a7%d8%a6%d8%b2%d9%87-%d8%ac%d8%b9%d9%81%d8%b1%db%8c-%d9%86%d8%ac%d9%81%db%8c
+35497,نانسی هولیوک,/profile/35497-nancy-holyoke
+17451,علی دشتی,/profile/17451-ali-dashti
+45268,مجید حبیبیان نقیبی,/profile/45268-%d9%85%d8%ac%db%8c%d8%af-%d8%ad%d8%a8%db%8c%d8%a8%db%8c%d8%a7%d9%86-%d9%86%d9%82%db%8c%d8%a8%db%8c
+5189,آلن بنت,/profile/5189-alan-bennett
+5909,انسیه موسویان,/profile/5909-ensiye-mousavian
+66099,ویلیام پاتر,/profile/66099-william-potter
+5601,ابراهیم رها,/profile/5601-ebrahim-raha
+23915,حوریه حسن لویی,/profile/23915-hourieh-hasan-louie
+8840,حمیدرضا شاه آبادی,/profile/8840-hamidreza-shahabadi
+263,نجف دریابندری,/profile/263-%d9%86%d8%ac%d9%81-%d8%af%d8%b1%db%8c%d8%a7%d8%a8%d9%86%d8%af%d8%b1%db%8c
+24868,طاهره شاه محمدی,/profile/24868-tahereh-shah-mohammadi
+70682,سحر صحتی پور,/profile/70682-%d8%b3%d8%ad%d8%b1-%d8%b5%d8%ad%d8%aa%db%8c-%d9%be%d9%88%d8%b1
+70681,راحله خنده رو,/profile/70681-%d8%b1%d8%a7%d8%ad%d9%84%d9%87-%d8%ae%d9%86%d8%af%d9%87-%d8%b1%d9%88
+65811,ریچارد پنچیک,/profile/65811-richard-panchyk
+18854,ای ای میلن,/profile/18854-a-a-milne
+17057,مارک رندولف,/profile/17057-marc-randolph
+66362,نادر مجد,/profile/66362-%d9%86%d8%a7%d8%af%d8%b1-%d9%85%d8%ac%d8%af
+6255,نرگس درخشان,/profile/6255-%d9%86%d8%b1%da%af%d8%b3-%d8%af%d8%b1%d8%ae%d8%b4%d8%a7%d9%86
+20240,سونیا صفری,/profile/20240-%d8%b3%d9%88%d9%86%db%8c%d8%a7-%d8%b5%d9%81%d8%b1%db%8c
+6162,مارگارت درابل,/profile/6162-margaret-drabble
+28290,راشل هلر,/profile/28290-rachael-f-heller
+17118,دکتر محمد مصدق,/profile/17118-%d8%af%da%a9%d8%aa%d8%b1-%d9%85%d8%ad%d9%85%d8%af-%d9%85%d8%b5%d8%af%d9%82
+4921,شهربانو قهاری,/profile/4921-shahrbanoo-ghahhari
+28942,کیارش غلامی,/profile/28942-%da%a9%db%8c%d8%a7%d8%b1%d8%b4-%d8%ba%d9%84%d8%a7%d9%85%db%8c
+15274,کوین گسکل,/profile/15274-kevin-gaskell
+22519,حبیب احمدزاده,/profile/22519-%d8%ad%d8%a8%db%8c%d8%a8-%d8%a7%d8%ad%d9%85%d8%af%d8%b2%d8%a7%d8%af%d9%87
+5747,جودی بلوم,/profile/5747-judy-blume
+34,ایتالو کالوینو,/profile/34-italo-calvino
+21422,آندره بو,/profile/21422-andre-boos
+31519,امانوئل مکرون,/profile/31519-emmanuel-macron
+40411,مصطفی جعفری,/profile/40411-%d9%85%d8%b5%d8%b7%d9%81%db%8c-%d8%ac%d8%b9%d9%81%d8%b1%db%8c
+10128,جولی کاگاوا,/profile/10128-julie-kagawa
+618,ادگار آلن پو,/profile/618-edgar-allan-poe
+17885,علیرضا منوچهریان,/profile/17885-alireza-manouchehrian
+20216,سیدنی سایمون,/profile/20216-sidney-b-simon
+38948,رها حیدری,/profile/38948-%d8%b1%d9%87%d8%a7-%d8%ad%db%8c%d8%af%d8%b1%db%8c
+54701,دیوید بلیک,/profile/54701-david-blake
+45740,کرین گتن,/profile/45740-kereen-getten
+4447,ابوالمعالی نصرالله منشی,/profile/4447-abu-l-ma-ali-nasrallah
+13445,جولیا کوک,/profile/13445-julia-cook
+51334,رایلی سیجر,/profile/51334-riley-sager
+18601,ثریا اردبیلی,/profile/18601-suraya-ardabili
+24230,ویلم فلور,/profile/24230-willem-m-floor
+12134,زهره پریرخ,/profile/12134-zohreh-parirokh
+24712,فضل الله حشمتی رضوی,/profile/24712-%d9%81%d8%b6%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%ad%d8%b4%d9%85%d8%aa%db%8c-%d8%b1%d8%b6%d9%88%db%8c
+17009,مقبول العلوی,/profile/17009-maqbul-moussa-al-alawi
+68418,محمدابراهیم پناهی,/profile/68418-%d9%85%d8%ad%d9%85%d8%af%d8%a7%d8%a8%d8%b1%d8%a7%d9%87%db%8c%d9%85-%d9%be%d9%86%d8%a7%d9%87%db%8c
+34977,داگلاس ای لوک,/profile/34977-douglas-a-luke
+8971,علی اکبر احمدی,/profile/8971-aliakbar-ahmadi
+2646,آتوسا صالحی,/profile/2646-atoosa-salehi
+34434,نیلوفر قائمی فر,/profile/34434-%d9%86%db%8c%d9%84%d9%88%d9%81%d8%b1-%d9%82%d8%a7%d8%a6%d9%85%db%8c-%d9%81%d8%b1
+7053,محمدرضا شفیعی کدکنی,/profile/7053-mohammad-reza-shafiei-kadkani
+33590,ژن فرانک,/profile/33590-gene-franks
+9805,یوهان سباستیان باخ,/profile/9805-bach-johann-sebastian
+14311,رابرت جردن,/profile/14311-robert-jordan
+29714,پیتر اتدگوئی,/profile/29714-peter-ettedgui
+22190,رضا یاوری,/profile/22190-%d8%b1%d8%b6%d8%a7-%db%8c%d8%a7%d9%88%d8%b1%db%8c
+4941,جاناتان کلمنتس,/profile/4941-jonathan-clements
+3515,سوزان لوری پارکس,/profile/3515-suzan-lori-parks
+3300,نیل دونالد والش,/profile/3300-neale-donald-walsch
+13519,اردوان امیراصلانی,/profile/13519-ardavan-amir-aslani
+93,شرمن الکسی,/profile/93-sherman-alexie
+68550,مرضیه شادپور,/profile/68550-%d9%85%d8%b1%d8%b6%db%8c%d9%87-%d8%b4%d8%a7%d8%af%d9%be%d9%88%d8%b1
+56832,جوکو کوکونن,/profile/56832-jouko-kokkonen
+56831,آرنولد جی. نلسون,/profile/56831-arnold-g-nelson
+34164,روناک مولایی,/profile/34164-%d8%b1%d9%88%d9%86%d8%a7%da%a9-%d9%85%d9%88%d9%84%d8%a7%db%8c%db%8c
+19081,علیرضا رحیمی بروجردی,/profile/19081-%d8%b9%d9%84%db%8c%d8%b1%d8%b6%d8%a7-%d8%b1%d8%ad%db%8c%d9%85%db%8c-%d8%a8%d8%b1%d9%88%d8%ac%d8%b1%d8%af%db%8c
+3991,مصطفی رحماندوست,/profile/3991-mostafa-rahmandoost
+6226,سعید بیابانکی,/profile/6226-%d8%b3%d8%b9%db%8c%d8%af-%d8%a8%db%8c%d8%a7%d8%a8%d8%a7%d9%86%da%a9%db%8c
+16551,هانا ای. هریسون,/profile/16551-hannah-e-harrison
+581,جک لندن,/profile/581-jack-london
+34493,الن اسپراگنز,/profile/34493-ellyn-spragins
+43548,محمدحسن جمشیدی,/profile/43548-%d9%85%d8%ad%d9%85%d8%af%d8%ad%d8%b3%d9%86-%d8%ac%d9%85%d8%b4%db%8c%d8%af%db%8c
+22330,علیرضا طاهری,/profile/22330-%d8%b9%d9%84%db%8c%d8%b1%d8%b6%d8%a7-%d8%b7%d8%a7%d9%87%d8%b1%db%8c
+18180,حسینعلی راشد,/profile/18180-%d8%ad%d8%b3%db%8c%d9%86%d8%b9%d9%84%db%8c-%d8%b1%d8%a7%d8%b4%d8%af
+48872,ارسلان سایمن,/profile/48872-arslan-sayman
+6253,شهره وکیلی,/profile/6253-shohreh-vakili
+14630,اسدالله شعبانی,/profile/14630-%d8%a7%d8%b3%d8%af%d8%a7%d9%84%d9%84%d9%87-%d8%b4%d8%b9%d8%a8%d8%a7%d9%86%db%8c
+31471,دیوید اولریچ,/profile/31471-dave-ulrich
+7229,علیرضا زمانی,/profile/7229-alireza-zamani
+21137,حامد زارع,/profile/21137-%d8%ad%d8%a7%d9%85%d8%af-%d8%b2%d8%a7%d8%b1%d8%b9
+55745,نینیان اسمارت,/profile/55745-ninian-smart
+2245,دارن هاردی,/profile/2245-darren-hardy
+54329,جان فارمن,/profile/54329-john-farman
+47864,ساسان کرمی زاده,/profile/47864-%d8%b3%d8%a7%d8%b3%d8%a7%d9%86-%da%a9%d8%b1%d9%85%db%8c-%d8%b2%d8%a7%d8%af%d9%87
+63612,گلن اف نول,/profile/63612-glenn-knoll
+47865,کیرین لاروود,/profile/47865-kieran-larwood
+32443,محبوبه حاج قاسمی,/profile/32443-%d9%85%d8%ad%d8%a8%d9%88%d8%a8%d9%87-%d8%ad%d8%a7%d8%ac-%d9%82%d8%a7%d8%b3%d9%85%db%8c
+40738,پل هیوئت,/profile/40738-paul-l-hewitt
+27503,بوریس گریگوریویچ کوزنتسوف,/profile/27503-boris-grigorjewitsch-kusnezow
+2238,یدالله آقاعباسی,/profile/2238-yad-al-lah-agha-abbasi
+8022,مهران سپهران,/profile/8022-mehran-sepehran
+24138,برانکو میتروویچ,/profile/24138-branko-mitrovic
+29058,یحیی قائدی,/profile/29058-%db%8c%d8%ad%db%8c%db%8c-%d9%82%d8%a7%d8%a6%d8%af%db%8c
+20879,فیلیس رینولدز نیلر,/profile/20879-phyllis-reynolds-naylor
+5227,ایرج افشار,/profile/5227-iraj-afshar
+8136,محمدمهدی تاج لنگرودی,/profile/8136-%d9%85%d8%ad%d9%85%d8%af%d9%85%d9%87%d8%af%db%8c-%d8%aa%d8%a7%d8%ac-%d9%84%d9%86%da%af%d8%b1%d9%88%d8%af%db%8c
+16156,فاطمه کسایی زاده,/profile/16156-%d9%81%d8%a7%d8%b7%d9%85%d9%87-%da%a9%d8%b3%d8%a7%db%8c%db%8c-%d8%b2%d8%a7%d8%af%d9%87
+53289,محمد افضلی شهری,/profile/53289-%d9%85%d8%ad%d9%85%d8%af-%d8%a7%d9%81%d8%b6%d9%84%db%8c-%d8%b4%d9%87%d8%b1%db%8c
+37535,یوسف اردبیلی,/profile/37535-%db%8c%d9%88%d8%b3%d9%81-%d8%a7%d8%b1%d8%af%d8%a8%db%8c%d9%84%db%8c
+15154,عبدالحسین امینی,/profile/15154-%d8%b9%d8%a8%d8%af%d8%a7%d9%84%d8%ad%d8%b3%db%8c%d9%86-%d8%a7%d9%85%db%8c%d9%86%db%8c
+20956,ابراهیم گرجی,/profile/20956-%d8%a7%d8%a8%d8%b1%d8%a7%d9%87%db%8c%d9%85-%da%af%d8%b1%d8%ac%db%8c
+32262,سروش مظفر مقدم,/profile/32262-%d8%b3%d8%b1%d9%88%d8%b4-%d9%85%d8%b8%d9%81%d8%b1-%d9%85%d9%82%d8%af%d9%85
+15849,محمدحسین نیرومند,/profile/15849-%d9%85%d8%ad%d9%85%d8%af%d8%ad%d8%b3%db%8c%d9%86-%d9%86%db%8c%d8%b1%d9%88%d9%85%d9%86%d8%af
+31653,ویلفرید تسیجر,/profile/31653-sir-wilfred-patrick-thesiger
+3729,گری نورتفیلد,/profile/3729-gary-northfield
+40794,بیل هریس,/profile/40794-bill-harris
+9643,کیت پین,/profile/9643-keith-payne
+66329,سید محمدعلی داعی نژاد,/profile/66329-%d8%b3%db%8c%d8%af-%d9%85%d8%ad%d9%85%d8%af%d8%b9%d9%84%db%8c-%d8%af%d8%a7%d8%b9%db%8c-%d9%86%da%98%d8%a7%d8%af
+33742,کارولین گوین,/profile/33742-carolyn-gavin
+63226,پاتا گاپریندشویلی,/profile/63226-paata-gaprindashvili
+13928,آنتونیو لادریلو,/profile/13928-antonio-ladrillo
+27941,آن ماری مولن,/profile/27941-anne-marie-moulin
+50212,سیدعلی دربانی,/profile/50212-%d8%b3%db%8c%d8%af%d8%b9%d9%84%db%8c-%d8%af%d8%b1%d8%a8%d8%a7%d9%86%db%8c
+50213,کامدین پارساکیا,/profile/50213-%da%a9%d8%a7%d9%85%d8%af%db%8c%d9%86-%d9%be%d8%a7%d8%b1%d8%b3%d8%a7%da%a9%db%8c%d8%a7
+25442,آسیه شریعتمدار,/profile/25442-%d8%a2%d8%b3%db%8c%d9%87-%d8%b4%d8%b1%db%8c%d8%b9%d8%aa%d9%85%d8%af%d8%a7%d8%b1
+18380,مایک وی آزکان,/profile/18380-michael-v-uschan
+3513,سام شپرد,/profile/3513-sam-shepard
+28755,شهرام علمداری,/profile/28755-%d8%b4%d9%87%d8%b1%d8%a7%d9%85-%d8%b9%d9%84%d9%85%d8%af%d8%a7%d8%b1%db%8c
+13510,لیزا تامپسون,/profile/13510-lisa-thompson
+15457,افسانه شعبان نژاد,/profile/15457-afsaneh-shaban-nejad
+7195,رابرت سولومون,/profile/7195-robert-c-solomon
+7196,کاتلین هایگینز,/profile/7196-%da%a9%d8%a7%d8%aa%d9%84%db%8c%d9%86-%d9%87%d8%a7%db%8c%da%af%db%8c%d9%86%d8%b2
+55378,یه ناگا تویوکیچی,/profile/55378-toyokichi-iyenaga
+4937,هوشنگ مرادی کرمانی,/profile/4937-hooshang-moradi-tehrani
+22533,محیی الدین ابن عربی,/profile/22533-%d9%85%d8%ad%db%8c%db%8c-%d8%a7%d9%84%d8%af%db%8c%d9%86-%d8%a7%d8%a8%d9%86-%d8%b9%d8%b1%d8%a8%db%8c
+51019,واندانا شیوا,/profile/51019-vandana-shiva
+29200,زهرا جزایری,/profile/29200-%d8%b2%d9%87%d8%b1%d8%a7-%d8%ac%d8%b2%d8%a7%db%8c%d8%b1%db%8c
+16834,رهی معیری,/profile/16834-rahi-mo-ayyeri
+27981,ساندرا اسمیدت,/profile/27981-sandra-smidt
+2842,آن پچت,/profile/2842-ann-patchett
+8451,عقیل فولادی,/profile/8451-%d8%b9%d9%82%db%8c%d9%84-%d9%81%d9%88%d9%84%d8%a7%d8%af%db%8c
+3285,شیموس هینی,/profile/3285-seamus-heaney
+48476,دبلیو گرین,/profile/48476-don-w-green
+4522,فردریک دار,/profile/4522-frederic-dard
+43859,مانی چهکندی نژاد,/profile/43859-%d9%85%d8%a7%d9%86%db%8c-%da%86%d9%87%da%a9%d9%86%d8%af%db%8c-%d9%86%da%98%d8%a7%d8%af
+38262,ایوب خان دین,/profile/38262-ayub-khan-din
+49,پیتر کری,/profile/49-peter-carey
+538,مژگان کلهر,/profile/538-%d9%85%da%98%da%af%d8%a7%d9%86-%da%a9%d9%84%d9%87%d8%b1
+18442,آلبرت بریل,/profile/18442-albert-barill%c3%a9
+53033,محسن دلیر,/profile/53033-%d9%85%d8%ad%d8%b3%d9%86-%d8%af%d9%84%db%8c%d8%b1
+25335,جمیل حسنلی,/profile/25335-cemil-hesenli
+20610,والتر لیپمن,/profile/20610-walter-lippmann
+44841,حکمت نعمت,/profile/44841-hikmat-nemat
+4536,علیرضا منجمی,/profile/4536-alireza-monajemi
+35705,محمدجواد اصغرپور,/profile/35705-%d9%85%d8%ad%d9%85%d8%af%d8%ac%d9%88%d8%a7%d8%af-%d8%a7%d8%b5%d8%ba%d8%b1%d9%be%d9%88%d8%b1
+19031,حسن بشیر,/profile/19031-%d8%ad%d8%b3%d9%86-%d8%a8%d8%b4%db%8c%d8%b1
+4680,عبدالکریم سروش,/profile/4680-abdolkarim-soroush
+42035,باربارا وارام,/profile/42035-barbara-wharram
+5000,محمدرضا بایرامی,/profile/5000-mohammadreza-bayrami
+19232,یوزف شاخت,/profile/19232-joseph-schacht
+45433,خوان داوید نازیو,/profile/45433-juan-david-nasio
+10172,شادی داودی,/profile/10172-shadi-davoudi
+811,آسترید لیندگرن,/profile/811-astrid-lindgren
+27414,راجر کورمن,/profile/27414-roger-corman
+38721,سپیده محمدیان,/profile/38721-%d8%b3%d9%be%db%8c%d8%af%d9%87-%d9%85%d8%ad%d9%85%d8%af%db%8c%d8%a7%d9%86
+24930,محمد علی رضا پور,/profile/24930-%d9%85%d8%ad%d9%85%d8%af-%d8%b9%d9%84%db%8c-%d8%b1%d8%b6%d8%a7-%d9%be%d9%88%d8%b1
+32337,ماری پاپ آزبرن,/profile/32337-mary-pope-osborne
+70043,فیل گیتز,/profile/70043-phil-gates
+30607,جودی لی بچمن,/profile/30607-judy-lee-bachman
+9678,احمد درخشان,/profile/9678-ahmad-derakhshan
+34071,امیر دژاکام,/profile/34071-%d8%a7%d9%85%db%8c%d8%b1-%d8%af%da%98%d8%a7%da%a9%d8%a7%d9%85
+13048,فرانسیس هاردینگ,/profile/13048-frances-hardinge
+6410,بنانا یوشیموتو,/profile/6410-banana-yoshimoto
+5621,آیزایا برلین,/profile/5621-isaiah-berlin
+47250,ایمان سیدی,/profile/47250-%d8%a7%db%8c%d9%85%d8%a7%d9%86-%d8%b3%db%8c%d8%af%db%8c
+55650,عباس مزینانی,/profile/55650-%d8%b9%d8%a8%d8%a7%d8%b3-%d9%85%d8%b2%db%8c%d9%86%d8%a7%d9%86%db%8c
+28808,جاناتان هیل,/profile/28808-hale-jonathan
+20632,کاووس حسن لی,/profile/20632-%da%a9%d8%a7%d9%88%d9%88%d8%b3-%d8%ad%d8%b3%d9%86-%d9%84%db%8c
+974,گارت نیکس,/profile/974-garth-nix
+33998,شهره مرشدی,/profile/33998-%d8%b4%d9%87%d8%b1%d9%87-%d9%85%d8%b1%d8%b4%d8%af%db%8c
+52311,محمدحسین آیتی,/profile/52311-%d9%85%d8%ad%d9%85%d8%af%d8%ad%d8%b3%db%8c%d9%86-%d8%a2%db%8c%d8%aa%db%8c
+31007,محمدجواد ظریف,/profile/31007-%d9%85%d8%ad%d9%85%d8%af%d8%ac%d9%88%d8%a7%d8%af-%d8%b8%d8%b1%db%8c%d9%81
+28885,دیوید رابنستین,/profile/28885-david-m-rubenstein
+17659,سوگند رمضانی,/profile/17659-sogand-ramezani
+3241,شبنم سمیعیان,/profile/3241-shabnam-samiyan
+488,سینتیا کادوهاتا,/profile/488-cynthia-kadohata
+51443,میشائیل پتروویتس,/profile/51443-michael-petrowitz
+23271,مجید احمدی,/profile/23271-majid-ahmadi
+19276,کومن,/profile/19276-kumon-publishing
+4633,غلامرضا طریقی,/profile/4633-gholamreza-tarighi
+13353,فیلیپ ریو,/profile/13353-philip-reeve
+22849,فاطمه حیدری,/profile/22849-%d9%81%d8%a7%d8%b7%d9%85%d9%87-%d8%ad%db%8c%d8%af%d8%b1%db%8c
+29764,آیرا مارک میلن,/profile/29764-ira-mark-milne
+4858,سید علی صالحی,/profile/4858-seyed-ali-salehi
+9421,ربکا مکای,/profile/9421-rebecca-makkai
+9513,سید رضا حیات الغیب,/profile/9513-%d8%b3%db%8c%d8%af-%d8%b1%d8%b6%d8%a7-%d8%ad%db%8c%d8%a7%d8%aa-%d8%a7%d9%84%d8%ba%db%8c%d8%a8
+28529,مایکل پاول,/profile/28529-michael-powell
+21412,راجر هارگریوز,/profile/21412-roger-hargreaves
+9577,جان ای سنفورد,/profile/9577-john-a-sanford
+30408,پاتریشیا گوچی,/profile/30408-patricia-gucci
+10595,یوهانس ایتن,/profile/10595-johannes-itten
+649,داشیل همت,/profile/649-dashiell-hammett
+21180,محسن ربانی جویباری,/profile/21180-%d9%85%d8%ad%d8%b3%d9%86-%d8%b1%d8%a8%d8%a7%d9%86%db%8c-%d8%ac%d9%88%db%8c%d8%a8%d8%a7%d8%b1%db%8c
+16861,جرالد لارو,/profile/16861-gerald-a-larue
+14367,رونه رندل,/profile/14367-ronne-randall
+10793,کاترین ای فوکس,/profile/10793-katherine-a-fowkes
+18149,غلامرضا حیدری ابهری,/profile/18149-%d8%ba%d9%84%d8%a7%d9%85%d8%b1%d8%b6%d8%a7-%d8%ad%db%8c%d8%af%d8%b1%db%8c-%d8%a7%d8%a8%d9%87%d8%b1%db%8c
+18700,مهدی وحیدی صدر,/profile/18700-mehdi-vahidi
+22544,مجتبی مقصودی,/profile/22544-%d9%85%d8%ac%d8%aa%d8%a8%db%8c-%d9%85%d9%82%d8%b5%d9%88%d8%af%db%8c
+50967,محمدباقر حشمت زاده,/profile/50967-%d9%85%d8%ad%d9%85%d8%af%d8%a8%d8%a7%d9%82%d8%b1-%d8%ad%d8%b4%d9%85%d8%aa-%d8%b2%d8%a7%d8%af%d9%87
+40294,ایمی سالتزمن,/profile/40294-amy-saltzman
+11460,لیندا سیگر,/profile/11460-linda-seger
+26736,محمد صمدی کاشانی,/profile/26736-mohammad-samadi
+19424,مارلو مورگان,/profile/19424-marlo-morgan
+39759,جیل مورفی,/profile/39759-jill-murphy
+2198,سعدی,/profile/2198-saadi
+23871,م عطاریانی,/profile/23871-mohammad-attariani
+51543,حامد علی اکبرزاده,/profile/51543-%d8%ad%d8%a7%d9%85%d8%af-%d8%b9%d9%84%db%8c-%d8%a7%da%a9%d8%a8%d8%b1%d8%b2%d8%a7%d8%af%d9%87
+46188,نسترن دهقان نجم آبادی,/profile/46188-%d9%86%d8%b3%d8%aa%d8%b1%d9%86-%d8%af%d9%87%d9%82%d8%a7%d9%86-%d9%86%d8%ac%d9%85-%d8%a2%d8%a8%d8%a7%d8%af%db%8c
+39582,کارول تامپسون,/profile/39582-carol-thompson
+12022,اوا خرلاخ,/profile/12022-eva-gerlach
+46986,دانش نصیری نیا,/profile/46986-%d8%af%d8%a7%d9%86%d8%b4-%d9%86%d8%b5%db%8c%d8%b1%db%8c-%d9%86%db%8c%d8%a7
+24609,ناصر بیک زاده مرزبانی,/profile/24609-%d9%86%d8%a7%d8%b5%d8%b1-%d8%a8%db%8c%da%a9-%d8%b2%d8%a7%d8%af%d9%87-%d9%85%d8%b1%d8%b2%d8%a8%d8%a7%d9%86%db%8c
+38563,هانس فاوری,/profile/38563-hans-faverey
+589,میخائیل بولگاکف,/profile/589-mikhail-bulgakov
+1091,گوستاو فلوبر,/profile/1091-gustave-flaubert
+6650,ژرژ ساند,/profile/6650-george-sand
+23651,تورج عاطف,/profile/23651-%d8%aa%d9%88%d8%b1%d8%ac-%d8%b9%d8%a7%d8%b7%d9%81
+28891,ابوالحسن ریاضی,/profile/28891-%d8%a7%d8%a8%d9%88%d8%a7%d9%84%d8%ad%d8%b3%d9%86-%d8%b1%db%8c%d8%a7%d8%b6%db%8c
+53433,غلامرضا کیانی,/profile/53433-gholam-reza-kiani
