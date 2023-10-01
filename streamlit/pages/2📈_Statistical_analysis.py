@@ -1,6 +1,8 @@
 import streamlit as st
 from model import *
 import plotly.express as px
+import json
+from streamlit_lottie import st_lottie
 
 def set_font():
     st.markdown(
@@ -31,12 +33,16 @@ def prepare_data(_mysqldb:MySQLConnection):
     return page_publication_rel,price_publication_rel,price_score_rel,books_by_format
 
 
-st.set_page_config(page_icon='📈',page_title='static analysis',layout='wide')
-st.title('📈static charts')
-
+st.set_page_config(page_icon='📈',page_title='statistical analysis',layout='wide')
+st.markdown("<h1 style='text-align: center;'>📈 Statistical analysis</h1>", unsafe_allow_html=True)
 mysqldb=set_connection()
 page_publication_rel,price_publication_rel,price_score_rel,books_by_format=prepare_data(mysqldb)
 set_font()
+
+lottie_chart = json.load(open( "analysis2.json"))
+col1,col2,col3 = st.columns([1,2,1])
+with col2:
+    st_lottie(lottie_chart,speed=1, loop=True, quality="medium", width=700,height=200)
 
 #q6
 st.markdown(f"""

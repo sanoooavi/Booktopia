@@ -142,6 +142,31 @@ def get_book_summary(mysql:MySQLConnection)->pd.DataFrame:
             group by book_detail.site_id"
     return pandas_sql(mysql,query)
 
+def get_best_books_by_budget(mysql:MySQLConnection,budget) ->pd.DataFrame:
+    query=f"select * from (\
+            select book_detail.book_id,\
+            book_detail.Persian_title,\
+            max(price_history.date) as last_update,\
+            score,\
+            (price * (100 - price_history.discount) / 100) as after_discount,\
+            sum((price * (100 - price_history.discount) / 100)) over (order by score\
+            desc, price) as sumofprice\
+            from book_detail\
+            inner join price_history\
+            on book_detail.book_id = price_history.book_id\
+            where book_detail.stock_status = ' موجود '\
+            and price_history.price<={budget}\
+            group by book_detail.book_id\
+            order by score desc, price) as t where sumofprice<={budget}" 
+    return pandas_sql(mysql,query)
+def get_unique_books(mysql:MySQLConnection,number)->pd.DataFrame:
+    query=f"select book_id,Persian_title,English_title,count(distinct rewards.reward) as award\
+         from rewards\
+         inner join book_detail on book_detail.site_id = rewards.site_id\
+         group by rewards.site_id\
+         order by award desc\
+         limit {number}"
+    return pandas_sql(mysql,query)
 # def get_movies_has_story(mysql:MySQLConnection)->list[str]:
 #     query="select Title from  storyline inner join  movie on movie.id=storyline.Movie_id"
 #     # query="select Title,Context from  storyline inner join  movie on movie.id=storyline.Movie_id"

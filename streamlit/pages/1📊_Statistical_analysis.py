@@ -1,7 +1,8 @@
 import streamlit as st
 from model import *
 from matplotlib import pyplot as plt
-import numpy as np
+import json
+from streamlit_lottie import st_lottie
 import plotly.express as px
 def set_font():
     st.markdown(
@@ -36,7 +37,7 @@ def prepare_data(_mysqldb:MySQLConnection):
 
 
 st.set_page_config(page_icon='📊',page_title='statistical analysis',layout='wide')
-st.title('📊Statistical analysis')
+st.markdown("<h1 style='text-align: center;'>📊 Statistical analysis</h1>", unsafe_allow_html=True)
 
 
 set_font()
@@ -47,12 +48,15 @@ book_tags_df,publisher_book_df,books_by_solar_year,\
 
 
 
-
+lottie_chart = json.load(open( "analysis1.json"))
+col1,col2,col3 = st.columns([1,2,1])
+with col2:
+    st_lottie(lottie_chart,speed=1, loop=True, quality="medium", width=700,height=200)
 #q1
 
 st.markdown(
     f"""
-    <h3 style='text-align: center;'>Books category treemap plot</h3>
+    <h4 style='text-align: center;'>Books category treemap plot</h4>
     """,
     unsafe_allow_html=True
 )
@@ -74,7 +78,7 @@ st.plotly_chart(fig3,use_container_width=True)
 #q2
 st.markdown(
     f"""
-    <h3 style='text-align: center;'>Top 10 publishers based on number of books plot</h3>
+    <h4 style='text-align: center;'>Top 10 publishers based on number of books plot</h4>
     """,
     unsafe_allow_html=True
 )
@@ -93,7 +97,7 @@ with cl1:
 #q3
 st.markdown(
     f"""
-    <h3 style='text-align: center;'>Line plot of Books based on year of publication</h3>
+    <h4 style='text-align: center;'>Line plot of Books based on year of publication</h4>
     """,
     unsafe_allow_html=True
 )
@@ -105,7 +109,7 @@ st.line_chart(books_by_ad_year,x='ad_publication_year',y='number_of_books',color
 #q4
 
 st.markdown(f"""
-    <h3 style='text-align: center;'>Top 10 writers by number of book</h3>
+    <h4 style='text-align: center;'>Top 10 writers by number of book</h4>
     """,unsafe_allow_html=True)
 
 col_w1,col_w2=st.columns((2))
@@ -121,7 +125,7 @@ with col_w2:
 #q5
 
 st.markdown(f"""
-    <h3 style='text-align: center;'>Top 10 translators by number of book</h3>
+    <h4 style='text-align: center;'>Top 10 translators by number of book</h4>
     """,unsafe_allow_html=True)
 col_t1,col_t2=st.columns((2))
 with col_t1:
