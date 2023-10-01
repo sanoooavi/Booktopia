@@ -146,6 +146,8 @@ def get_best_books_by_budget(mysql:MySQLConnection,budget) ->pd.DataFrame:
     query=f"select * from (\
             select book_detail.book_id,\
             book_detail.Persian_title,\
+            book_detail.English_title,\
+            publisher_id,\
             max(price_history.date) as last_update,\
             score,\
             (price * (100 - price_history.discount) / 100) as after_discount,\
@@ -155,10 +157,48 @@ def get_best_books_by_budget(mysql:MySQLConnection,budget) ->pd.DataFrame:
             inner join price_history\
             on book_detail.book_id = price_history.book_id\
             where book_detail.stock_status = ' موجود '\
-            and price_history.price<={budget}\
+            and (price * (100 - price_history.discount) / 100)<={budget}\
             group by book_detail.book_id\
             order by score desc, price) as t where sumofprice<={budget}" 
     return pandas_sql(mysql,query)
+
+def get_most_profitable_books_by_budget(mysql:MySQLConnection,budget) ->pd.DataFrame:
+    query=f"select * from (\
+            select book_detail.book_id,\
+            book_detail.Persian_title,\
+            book_detail.English_title,\
+            max(price_history.date) as last_update,\
+            edition,\
+            publisher_id,\
+            (price * (100 - price_history.discount) / 100) as after_discount,\
+            sum((price * (100 - price_history.discount) / 100)) over (order by edition\
+            desc, price) as sumofprice\
+            from book_detail\
+            inner join price_history\
+            on book_detail.book_id = price_history.book_id\
+            where book_detail.stock_status = ' موجود '\
+            and (price * (100 - price_history.discount) / 100)<={budget}\
+            group by book_detail.book_id\
+            order by edition desc, price) as t where sumofprice<={budget}" 
+    return pandas_sql(mysql,query)
+
+def get_most_books_by_budget(mysql:MySQLConnection,budget) ->pd.DataFrame:
+    query=f"select * from (\
+            select book_detail.book_id,\
+            book_detail.Persian_title,\
+            publisher_id,\
+            max(price_history.date) as last_update,\
+            (price * (100 - price_history.discount) / 100) as after_discount,\
+            sum((price * (100 - price_history.discount) / 100)) over (order by price) as sumofprice\
+            from book_detail\
+            inner join price_history\
+            on book_detail.book_id = price_history.book_id\
+            where book_detail.stock_status = ' موجود '\
+            and (price * (100 - price_history.discount) / 100)<={budget}\
+            group by book_detail.book_id\
+            order by price) as t where sumofprice<={budget}" 
+    return pandas_sql(mysql,query)
+
 def get_unique_books(mysql:MySQLConnection,number)->pd.DataFrame:
     query=f"select book_id,Persian_title,English_title,count(distinct rewards.reward) as award\
          from rewards\
@@ -167,11 +207,12 @@ def get_unique_books(mysql:MySQLConnection,number)->pd.DataFrame:
          order by award desc\
          limit {number}"
     return pandas_sql(mysql,query)
-# def get_movies_has_story(mysql:MySQLConnection)->list[str]:
-#     query="select Title from  storyline inner join  movie on movie.id=storyline.Movie_id"
-#     # query="select Title,Context from  storyline inner join  movie on movie.id=storyline.Movie_id"
-#     return (pandas_sql(mysql,query).Title)
-
-# def get_result_word_cloud(mysql:MySQLConnection,name:str)->str:
-#     query=f"select Context from  storyline inner join  movie on movie.id=storyline.Movie_id where movie.Title='{name}'"
-#     return pandas_sql(mysql,query).Context
+def get_most_veneration_book(mysql:MySQLConnection,num) ->pd.DataFrame:
+    query=f'select book_detail.Persian_title,book_detail.English_title,\
+            count(distinct  veneration.prise_writer) as count_comment\
+            from book_detail\
+            inner join veneration on veneration.site_id = book_detail.site_id\
+            group by veneration.site_id\
+            order by count_comment desc\
+            limit {num}'
+    return pandas_sql(mysql,query)

@@ -3,6 +3,7 @@ from model import *
 from matplotlib import pyplot as plt
 import numpy as np
 from wordcloud import WordCloud
+from translate import Translator
 
 st.set_page_config(page_icon='☁️',page_title='wordCloud')
 # st.title('📈 interactive_chart')
@@ -22,17 +23,23 @@ def prepare():
 
 book_summary_df,book_title_list=prepare()
 # Create some sample text
-font_path = "C:\\Users\\Asus\\Downloads\\chocolatier_artisanal\\Chocolatier Artisanal.ttf"
-
+# font_path = "C:\\Users\\Asus\\Downloads\\chocolatier_artisanal\\Chocolatier Artisanal.ttf"
+translator = Translator(from_lang="fa", to_lang="en")
 st.markdown("<h1 style='text-align: center;'>☁️📗Book's word cloud</h1>", unsafe_allow_html=True)
 book_title= st.selectbox("Select a book", book_title_list) 
 if book_title is None:
     st.write('select')
 else:
     book_summary=book_summary_df[book_summary_df['Persian_title']==book_title]['summary']
-    wordcloud = WordCloud(width=800, height=400, background_color='white',font_path=font_path).generate(book_summary)
+    # st.write(book_summary.iloc[0])
+    # translation=translator.translate(book_summary.iloc[0])
+    # st.write(translation)
+    wordcloud = WordCloud(width=800, height=400, background_color='white'
+                          )\
+    .generate(book_summary.iloc[0])
+    # st.markdown(f'<div dir="rtl">{wordcloud.to_html()}</div>', unsafe_allow_html=True)
     st.image(wordcloud.to_image())
-
+    # st.write(f'<div dir="rtl">{wordcloud.to_html()}</div>', unsafe_allow_html=True)
 
 # st.markdown("<h1 style='text-align: center;'>🎭actors netwrok graph</h1>", unsafe_allow_html=True)
 # df= worked_actors_togethar(mysqldb)
