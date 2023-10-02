@@ -70,6 +70,7 @@ on=st.sidebar.toggle('discount')
 price_range=st.sidebar.slider("price range: ",value=(price_list.min(),price_list.max()))
 score_range=st.sidebar.slider("Score: ", min_value=0.0, max_value=5.0, value=(0.0, 5.0),step=0.1)
 edition_range=st.sidebar.slider(" edition: ", value=(min(edition_list),max(edition_list)))
+page_number_range=st.sidebar.slider(" page number: ", min_value=4,max_value=10000,value=(4,10000))
 language_box=st.sidebar.multiselect('language',options=language_list,default=language_list[0])
 stock_status_box=st.sidebar.multiselect('stock status',options=stock_status_list,default=stock_status_list[0])
 publishers_box=st.sidebar.multiselect('publisher',options=publishers_list,default=publishers_list[0])
@@ -80,15 +81,16 @@ if search_button:
     
     query='select book_detail.site_id,book_detail.book_id,Persian_title,English_title,score,edition,\
        solar_publication_year,ad_publication_year,book_language,stock_status,price,\
-       discount,publisher.name as publisher,writer_page.name as writer\
+       discount,publisher.name as publisher,writer_page.name as writer,book_detail.page_number as page_number\
             from book_detail\
             join price_history on price_history.book_id=book_detail.book_id\
             join publisher on publisher.id=book_detail.publisher_id\
             join book_summary on book_summary.site_id = book_detail.site_id\
             join writer on writer.site_id=book_summary.site_id\
             join writer_page on writer.writer_id = writer_page.writer_id\
-            where price_history.price between '+str(price_range[0]) +' and '+str(price_range[1])
-    
+            where price_history.price between '+str(price_range[0]) +' and '+str(price_range[1])\
+            +' and book_detail.page_number between '+str(page_number_range[0]) +' and '+str(page_number_range[1])
+              
     if len(tags_box)!=0:
         book_tags_query='select book_tag.site_id, tags.name\
                     from (select site_id\

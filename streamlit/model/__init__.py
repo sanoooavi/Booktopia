@@ -82,7 +82,7 @@ def get_publishers_df(mysql:MySQLConnection)->pd.DataFrame:
     return pandas_sql(mysql,query)
 
 def get_writer_df(mysql:MySQLConnection)->pd.DataFrame:
-    query='select writer.writer_id,writer_page.name from writer inner join writer_page on writer.writer_id = writer_page.writer_id;'
+    query='select writer.writer_id,writer_page.name,writer_page.about from writer inner join writer_page on writer.writer_id = writer_page.writer_id;'
     return pandas_sql(mysql,query)
 
 def get_book_detail(mysql:MySQLConnection)->pd.DataFrame:
