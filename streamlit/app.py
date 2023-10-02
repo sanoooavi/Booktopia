@@ -1,7 +1,14 @@
 import streamlit as st
-import matplotlib.pyplot as plt
-from wordcloud import WordCloud
-st.title("📚Booktopia")
+from streamlit_extras.let_it_rain import rain
+
+st.set_page_config(page_icon='📚',page_title='Main page')
+st.markdown("<h1 style='text-align: center;'>📚 Booktopia</h1>", unsafe_allow_html=True)
+rain(
+    emoji="📙",
+    font_size=30,
+    falling_speed=9,
+    animation_length="infinite",
+)
 """
 ### Project Structure
 
@@ -16,18 +23,31 @@ current_project
 ├── model
 |    └── __init__.py
 ├── codes
-|    ├── storyline.ipynb
-|    ├── crawl.ipynb
-|    ├── db.py
-|    ├── apiws.py
-|    └── crawl.py
+|    ├── Scrap.ipynb
+|    ├── get_links.ipynb
+|    ├── writer_translator_info.ipynb
+|    ├── Database.ipynb
+|    ├── Streamlit
+|    └── statistic.ipynb
 └── csvFiles
-    ├── cast.csv
-    ├── cgenre.csv
-    ├── story_line.csv
-    ├── movie.csv
-    ├── crew.csv
-    └── person.csv
+     ├── award.csv
+     ├── book_veneration.csv
+     ├── bookData.csv
+     ├── books_url.csv
+     ├── BookSummaryData.csv 
+     ├── bookTagsData.csv  
+     ├── cover_type.csv   
+     ├── data.csv   
+     ├── format.csv     
+     ├── price-history.csv       
+     ├── publisher.csv
+     ├── tag.csv
+     ├── translator.csv
+     ├── translator_info.csv
+     ├── writer.csv
+     ├── writer_info.csv
+     ├── writer_page.csv
+     └──   translator_page.csv 
 ```
 """
 

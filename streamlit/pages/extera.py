@@ -39,7 +39,6 @@ else:
     .generate(book_summary.iloc[0])
     # st.markdown(f'<div dir="rtl">{wordcloud.to_html()}</div>', unsafe_allow_html=True)
     st.image(wordcloud.to_image())
-    # st.write(f'<div dir="rtl">{wordcloud.to_html()}</div>', unsafe_allow_html=True)
 
 # st.markdown("<h1 style='text-align: center;'>🎭actors netwrok graph</h1>", unsafe_allow_html=True)
 # df= worked_actors_togethar(mysqldb)
