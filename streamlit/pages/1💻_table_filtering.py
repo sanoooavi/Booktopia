@@ -52,8 +52,8 @@ def prepare_df():
     book_data_df=get_book_detail(mysqldb)
     edition_list=book_data_df[book_data_df['edition']!=-1]['edition'].drop_duplicates().to_list()
     language_list=book_data_df['book_language'].drop_duplicates().to_list()
-    persian_title_list= book_data_df['Persian_title'].to_list()
-    english_title_list= book_data_df['English_title'].to_list()
+    persian_title_list= book_data_df['Persian_title'].drop_duplicates().to_list()
+    english_title_list= book_data_df['English_title'].drop_duplicates().to_list()
     stock_status_list=book_data_df['stock_status'].drop_duplicates().to_list()
     score_list=book_data_df['score'].drop_duplicates().to_list()
     all_books_with_tags_df=get_all_books_with_tags(mysqldb)
@@ -80,7 +80,6 @@ publishers_box=st.sidebar.multiselect('publisher',options=publishers_list,defaul
 writers_box=st.sidebar.multiselect('writer',options=writers_list,default=writers_list[0])
 translator_box=st.sidebar.multiselect('translator',options=translator_list,default=None)
 search_button=st.sidebar.button('Filter')
-
 if search_button:
     
     query='select book_detail.site_id,book_detail.book_id,Persian_title,English_title,score,edition,\
@@ -120,7 +119,7 @@ if search_button:
         book_translator_df=get_search_result(mysqldb,book_translator_query)
     else:
         book_translator_df=all_books_translators.copy()
-    book_translator_df.rename(columns={'name':'translator_name'},inplace=True)
+    book_translator_df.rename(columns={'name':'translator'},inplace=True)
 
 
     if len(persian_title_box)!=0:
@@ -139,7 +138,7 @@ if search_button:
 
     searched_df=get_search_result(mysqldb,query)
     searched_df=pd.merge(book_tags_df,searched_df,how='inner')
-    searched_df=pd.merge(book_tags_df,book_translator_df,how='inner')
+    searched_df=pd.merge(searched_df,book_translator_df,how='inner')
    
     grouped=searched_df.groupby('book_id')
     
@@ -147,6 +146,7 @@ if search_button:
     book_dict={}
     for book_id, group in grouped:
         this_book_tag=[]
+        this_book_translator=[]
         this_book_writer=[]
         this_book_publisher=[]
         book_dict['book_id']=book_id
@@ -166,8 +166,10 @@ if search_button:
         for index, row in group.iterrows():
             this_book_tag.append(row['tag_name'])
             this_book_writer.append(row['writer'])
+            this_book_translator.append(row['translator'])
         book_dict['tags']=this_book_tag
         book_dict['writer']=list(set(this_book_writer))  
+        book_dict['translator']=list(set(this_book_translator))
         all_book_list.append(book_dict.copy())
         # st.write(book_dict)
     
@@ -180,6 +182,7 @@ if search_button:
                 st.header(book['english_title'])
                 st.subheader(book['persian_title'])
                 st.write('Writer: ', book['writer'][0])
+                st.write('Translator: ',str(book['translator']).replace('[','').replace(']','').replace("'",''))
                 st.write('Publisher: ', book['publisher'])
                 st.write(book['score'], f"{show_stars(book['score'])}")
             

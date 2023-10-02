@@ -238,3 +238,4 @@ def get_all_books_translators(mysql:MySQLConnection)->pd.DataFrame:
          inner join book_detail on book_detail.book_id = tbl.book_id\
          inner join translator on book_detail.book_id = translator.book_id\
          inner join translator_page on translator_page.translator_id = translator.translator_id"
+    return pandas_sql(mysql,query)
