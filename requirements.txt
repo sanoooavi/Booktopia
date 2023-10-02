@@ -1,0 +1,17 @@
+numpy~=1.25.2
+pandas~=2.1.0
+matplotlib==3.7.1
+seaborn==0.12.2
+plotly==5.15.0
+scikit-learn
+joblib==1.2.0
+requests
+beautifulsoup4
+selenium
+openpyxl
+mysql~=0.0.3
+mysql-connector-python~=8.1.0
+streamlit~=1.27.1
+wordcloud~=1.9.2
+streamlit-extras
+streamlit_lottie
