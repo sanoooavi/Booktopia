@@ -8,15 +8,15 @@ import plotly.express as px
 
 def set_font():
     st.markdown(
-        """
-        <style>
-        * {
-            font-family: 'Tahoma', 'Times New Romans', sans-serif !important;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+            """
+            <style>
+            * {
+                font-family: 'Tahoma', 'Times New Romans', sans-serif !important;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
 
 
 def set_connection():
