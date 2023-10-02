@@ -45,6 +45,9 @@ def prepare_df():
     #writer filtering
     writers_df=get_writer_df(mysqldb)
     writers_list=writers_df['name'].drop_duplicates().to_list()
+    #translator filtering
+    translator_list=get_translators_name(mysqldb)
+    all_books_translators=get_all_books_translators(mysqldb)
     #book data filtering
     book_data_df=get_book_detail(mysqldb)
     edition_list=book_data_df[book_data_df['edition']!=-1]['edition'].drop_duplicates().to_list()
@@ -56,13 +59,13 @@ def prepare_df():
     all_books_with_tags_df=get_all_books_with_tags(mysqldb)
     return [price_list,tags_list,publishers_list,\
            writers_list,edition_list,language_list,persian_title_list,\
-           english_title_list,stock_status_list,score_list,all_books_with_tags_df]
+           english_title_list,stock_status_list,score_list,all_books_with_tags_df,translator_list,all_books_translators]
 
     
 set_font()
 price_list,tags_list,publishers_list,writers_list\
 ,edition_list,language_list,persian_title_list,\
-english_title_list,stock_status_list,score_list,all_books_tags_df=prepare_df()
+english_title_list,stock_status_list,score_list,all_books_tags_df,translator_list,all_books_translators=prepare_df()
 st.sidebar.markdown("Choose your filter: ")
 persian_title_box=st.sidebar.multiselect('Book Title',options=persian_title_list,default=None)
 tags_box=st.sidebar.multiselect('book_tags',options=tags_list,default=tags_list[0])
@@ -75,6 +78,7 @@ language_box=st.sidebar.multiselect('language',options=language_list,default=lan
 stock_status_box=st.sidebar.multiselect('stock status',options=stock_status_list,default=stock_status_list[0])
 publishers_box=st.sidebar.multiselect('publisher',options=publishers_list,default=publishers_list[0])
 writers_box=st.sidebar.multiselect('writer',options=writers_list,default=writers_list[0])
+translator_box=st.sidebar.multiselect('translator',options=translator_list,default=None)
 search_button=st.sidebar.button('Filter')
 
 if search_button:
@@ -104,6 +108,21 @@ if search_button:
          book_tags_df=all_books_tags_df.copy()
     book_tags_df.rename(columns={'name':'tag_name'},inplace=True)
 
+    if len(translator_box)!=0:
+        book_translator_query="select book_detail.book_id, translator_page.name\
+        from (select book_id\
+            from translator\
+                    inner join translator_page on translator_page.translator_id = translator.translator_id\
+         where translator_page.name in in("+str(translator_box).replace('[','').replace(']','')+")) as tbl\
+         inner join book_detail on book_detail.book_id = tbl.book_id\
+         inner join translator on book_detail.book_id = translator.book_id\
+         inner join translator_page on translator_page.translator_id = translator.translator_id"
+        book_translator_df=get_search_result(mysqldb,book_translator_query)
+    else:
+        book_translator_df=all_books_translators.copy()
+    book_translator_df.rename(columns={'name':'translator_name'},inplace=True)
+
+
     if len(persian_title_box)!=0:
         query+=' and Persian_title in ('+str(persian_title_box).replace('[','').replace(']','')+')'
     if on:
@@ -120,6 +139,7 @@ if search_button:
 
     searched_df=get_search_result(mysqldb,query)
     searched_df=pd.merge(book_tags_df,searched_df,how='inner')
+    searched_df=pd.merge(book_tags_df,book_translator_df,how='inner')
    
     grouped=searched_df.groupby('book_id')
     

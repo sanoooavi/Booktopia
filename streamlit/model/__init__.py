@@ -224,3 +224,17 @@ def get_all_books_with_tags(mysql:MySQLConnection)->pd.DataFrame:
                     inner join book_tag on tbl.site_id = book_tag.site_id\
                     inner join tags on book_tag.tag_id = tags.id'
     return pandas_sql(mysql,query)
+def get_translators_name(mysql:MySQLConnection)->list[str]:
+    query='select distinct name\
+        from translator\
+         inner join translator_page on translator.translator_id = translator_page.translator_id'
+    return list(pandas_sql(mysql,query).name)
+
+def get_all_books_translators(mysql:MySQLConnection)->pd.DataFrame:
+    query="select book_detail.book_id, translator_page.name\
+        from (select book_id\
+            from translator\
+                    inner join translator_page on translator_page.translator_id = translator.translator_id) as tbl\
+         inner join book_detail on book_detail.book_id = tbl.book_id\
+         inner join translator on book_detail.book_id = translator.book_id\
+         inner join translator_page on translator_page.translator_id = translator.translator_id"

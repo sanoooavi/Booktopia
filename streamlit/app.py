@@ -33,5 +33,5 @@ current_project
 
 with st.sidebar.expander("About the App"):
     st.write(
-    "In this project, our goal is to learn how to use [`streamlit`](streamlit.io) by creating the ultimate data dashboard."
+    "Introducing our innovative app designed exclusively for bookshop owners! Our app streamlines the process of sourcing and purchasing books for your store. With a vast catalog of titles, easy search and filter options, you can effortlessly discover and acquire the perfect additions to your shelves. Say goodbye to the hassles of manual book procurement and hello to a more efficient, book-loving future with our app!"
 )
