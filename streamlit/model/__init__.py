@@ -239,3 +239,15 @@ def get_all_books_translators(mysql:MySQLConnection)->pd.DataFrame:
          inner join translator on book_detail.book_id = translator.book_id\
          inner join translator_page on translator_page.translator_id = translator.translator_id"
     return pandas_sql(mysql,query)
+
+def get_number_of_books_published_by_pubs(mysql:MySQLConnection)->pd.DataFrame:
+    query='SELECT p1.name AS publisher1, p2.name AS publisher2,COUNT(*) AS book_count\
+            FROM book_detail AS bd1\
+            INNER JOIN book_detail AS bd2 ON bd1.English_title = bd2.English_title AND bd1.publisher_id < bd2.publisher_id\
+            INNER JOIN publisher AS p1 ON bd1.publisher_id = p1.id\
+            INNER JOIN publisher AS p2 ON bd2.publisher_id = p2.id\
+            GROUP BY publisher1, publisher2\
+            HAVING book_count >= 1\
+            ORDER BY book_count DESC\
+            limit 40;'
+    return pandas_sql(mysql,query)
