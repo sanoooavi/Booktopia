@@ -216,3 +216,11 @@ def get_most_veneration_book(mysql:MySQLConnection,num) ->pd.DataFrame:
             order by count_comment desc\
             limit {num}'
     return pandas_sql(mysql,query)
+def get_all_books_with_tags(mysql:MySQLConnection)->pd.DataFrame:
+    query='select book_tag.site_id, tags.name\
+                    from (select site_id\
+                    from book_tag\
+                    inner join tags on tags.id = book_tag.tag_id) as tbl\
+                    inner join book_tag on tbl.site_id = book_tag.site_id\
+                    inner join tags on book_tag.tag_id = tags.id'
+    return pandas_sql(mysql,query)

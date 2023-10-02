@@ -1,7 +1,8 @@
 import streamlit as st
 from model import *
+import pandas as pd
 
-st.title('💻Table Filtering')
+st.markdown("<h1 style='text-align: center;'>💻 Table Filtering</h1>", unsafe_allow_html=True)
 try:
     mysqldb = get_connection()
 except:
@@ -20,7 +21,10 @@ def set_font():
             unsafe_allow_html=True
         )
 def show_stars(rating):
-    num_stars = int(rating)
+    if rating - int(rating) >= 0.5:
+        num_stars = int(rating) + 1
+    else:
+        num_stars = int(rating)
     star_display = '⭐' * num_stars
     remaining_stars = 5 - num_stars
     star_display += '☆' * remaining_stars
@@ -49,38 +53,42 @@ def prepare_df():
     english_title_list= book_data_df['English_title'].to_list()
     stock_status_list=book_data_df['stock_status'].drop_duplicates().to_list()
     score_list=book_data_df['score'].drop_duplicates().to_list()
+    all_books_with_tags_df=get_all_books_with_tags(mysqldb)
     return [price_list,tags_list,publishers_list,\
            writers_list,edition_list,language_list,persian_title_list,\
-           english_title_list,stock_status_list,score_list]
+           english_title_list,stock_status_list,score_list,all_books_with_tags_df]
 
     
 set_font()
 price_list,tags_list,publishers_list,writers_list\
 ,edition_list,language_list,persian_title_list,\
-english_title_list,stock_status_list,score_list=prepare_df()
+english_title_list,stock_status_list,score_list,all_books_tags_df=prepare_df()
 st.sidebar.markdown("Choose your filter: ")
-persian_title_box=st.sidebar.multiselect('نام کتاب',options=persian_title_list,default=None)
+persian_title_box=st.sidebar.multiselect('Book Title',options=persian_title_list,default=None)
 tags_box=st.sidebar.multiselect('book_tags',options=tags_list,default=tags_list[0])
 on=st.sidebar.toggle('discount')
 price_range=st.sidebar.slider("price range: ",value=(price_list.min(),price_list.max()))
-score_range=st.sidebar.slider("Score: ", value=(min(score_list),max(score_list) ))
+score_range=st.sidebar.slider("Score: ", min_value=0.0, max_value=5.0, value=(0.0, 5.0),step=0.1)
 edition_range=st.sidebar.slider(" edition: ", value=(min(edition_list),max(edition_list)))
 language_box=st.sidebar.multiselect('language',options=language_list,default=language_list[0])
 stock_status_box=st.sidebar.multiselect('stock status',options=stock_status_list,default=stock_status_list[0])
 publishers_box=st.sidebar.multiselect('publisher',options=publishers_list,default=publishers_list[0])
 writers_box=st.sidebar.multiselect('writer',options=writers_list,default=writers_list[0])
-search_button=st.sidebar.button('filter')
+search_button=st.sidebar.button('Filter')
 
 if search_button:
     
-    query='select book_detail.site_id,book_detail.book_id,Persian_title,English_title,score,edition,solar_publication_year,ad_publication_year,book_language,stock_status,price,discount,publisher.name as publisher,writer_page.name as writer\
-            from book_detail \
-            inner join price_history on price_history.book_id=book_detail.book_id\
-            inner join publisher on publisher.id=book_detail.publisher_id\
-            inner join writer on writer.site_id=book_detail.site_id \
-            inner join writer_page on writer.writer_id = writer_page.writer_id\
+    query='select book_detail.site_id,book_detail.book_id,Persian_title,English_title,score,edition,\
+       solar_publication_year,ad_publication_year,book_language,stock_status,price,\
+       discount,publisher.name as publisher,writer_page.name as writer\
+            from book_detail\
+            join price_history on price_history.book_id=book_detail.book_id\
+            join publisher on publisher.id=book_detail.publisher_id\
+            join book_summary on book_summary.site_id = book_detail.site_id\
+            join writer on writer.site_id=book_summary.site_id\
+            join writer_page on writer.writer_id = writer_page.writer_id\
             where price_history.price between '+str(price_range[0]) +' and '+str(price_range[1])
- 
+    
     if len(tags_box)!=0:
         book_tags_query='select book_tag.site_id, tags.name\
                     from (select site_id\
@@ -90,10 +98,12 @@ if search_button:
                     inner join book_tag on tbl.site_id = book_tag.site_id\
                     inner join tags on book_tag.tag_id = tags.id'
         book_tags_df=get_search_result(mysqldb,book_tags_query) 
-        book_tags_df.rename(columns={'name':'tag_name'},inplace=True)
+    else:
+         book_tags_df=all_books_tags_df.copy()
+    book_tags_df.rename(columns={'name':'tag_name'},inplace=True)
 
     if len(persian_title_box)!=0:
-        query+=' where Persian_title in ('+str(persian_title_box).replace('[','').replace(']','')+')'
+        query+=' and Persian_title in ('+str(persian_title_box).replace('[','').replace(']','')+')'
     if on:
         query+=' and price_history.discount!=0'
     query+=' and score between '+str(score_range[0])+' and '+str(score_range[1])+' and edition between '+str(edition_range[0])+' and '+str(edition_range[1])
@@ -107,8 +117,7 @@ if search_button:
         query+=' and writer_page.name in('+str(writers_box).replace('[','').replace(']','')+')'
 
     searched_df=get_search_result(mysqldb,query)
-    if len(book_tags_query)!=0:
-            searched_df=pd.merge(book_tags_df,searched_df,how='inner')
+    searched_df=pd.merge(book_tags_df,searched_df,how='inner')
    
     grouped=searched_df.groupby('book_id')
     
@@ -139,54 +148,39 @@ if search_button:
         book_dict['writer']=list(set(this_book_writer))  
         all_book_list.append(book_dict.copy())
         # st.write(book_dict)
-        # st.write("---")  
-    # st.write(all_book_list)
-
-    # cl1,cl2,cl3= st.columns(3)
-    # for row in all_book_list:
-    #         with cl1:
-    #             st.markdown('نام کتاب: '+row['persian_title'])
-    #             st.markdown('title: '+row['english_title'])
-    #             st.markdown("writer: ")
-    #             st.markdown(row['writer'])
-    #             st.markdown("publisher: ")
-    #             st.markdown(row['publisher'])
-    #         with cl2:
-    #             st.markdown("Average Rating:")
-    #             st.markdown(f"{show_stars(row['score'])}")
-    #             st.markdown('publication year :')
-    #             st.markdown('solar: '+str(row['solar_publication_year']))
-    #             st.markdown('ad: '+str(row['ad_publication_year']))
-    #         with cl3:
-    #             st.markdown("status: ")
-    #             st.markdown(row['status'])
-    #             st.markdown('Price: ')
-    #             st.markdown(str(row['price'])+' toman ')
-    #             st.markdown('Discount: ')
-    #             st.markdown(str(row['discount'])+'%')
-    #         st.markdown('tags: '+str(row['tags']))
-    #         st.markdown(20*'-')
-    for row in all_book_list:
-            st.markdown('نام کتاب: '+row['persian_title'])
-            st.markdown('title: '+row['english_title'])
-            st.markdown("writer: ")
-            st.markdown(row['writer'])
-            st.markdown("publisher: ")
-            st.markdown(row['publisher'])
-            st.markdown("Average Rating:")
-            st.markdown(f"{show_stars(row['score'])}")
-            st.markdown('publication year :')
-            st.markdown('solar: '+str(row['solar_publication_year']))
-            st.markdown('ad: '+str(row['ad_publication_year']))
-            st.markdown("status: ")
-            st.markdown(row['status'])
-            st.markdown('Price: ')
-            st.markdown(str(row['price'])+' toman ')
-            st.markdown('Discount: ')
-            st.markdown(str(row['discount'])+'%')
-            st.markdown('tags: '+str(row['tags']))
-            st.markdown(20*'-')
+    
+    if(len(all_book_list)) == 0:
+        st.markdown(''':rainbow[***No Book was Found with this Features***]''')
+    else:
+        for book in all_book_list:
+            col1, col2 = st.columns(2)
+            with col1:
+                st.header(book['english_title'])
+                st.subheader(book['persian_title'])
+                st.write('Writer: ', book['writer'][0])
+                st.write('Publisher: ', book['publisher'])
+                st.write(book['score'], f"{show_stars(book['score'])}")
+            
+            ind_lst = ['','','','', 'Publication year:','Publication year:', 'Stock Status:', 'Price:', 'Discount:']
+            val_lst = ['','','','', book['solar_publication_year'], book['ad_publication_year'],
+                   book['status'], str(book['price'])+' toman', str(book['discount'])+'%']
+            df = pd.DataFrame({'ind': ind_lst, 'val': val_lst})
+            with col2:
+                for r in range(df.shape[0]):
+                    if df.val[r] == -1:
+                        df.val[r] = ''
+                    st.write(f'{df.ind[r]} ', df.val[r])
+            tag_set = set(book['tags'])
+            tag_str = ''
+            tag_lst = list(tag_set)
+            for t in range(len(tag_lst)-1):
+                tag_str += tag_lst[t]
+                tag_str += ',  '
+            tag_str += tag_lst[-1]
+            st.write(tag_str)
+            st.divider()
 
         
 else:
-    st.write('look for your books here ...')
+    st.markdown("<h5 style='text-align: center;'><span style='color: #f00;'><span style='color: #ff7f00;'></span>look for your books here...<span style='color: #ff7f00;'></span></span></h5>", unsafe_allow_html=True)
+    # st.markdown(''':rainbow[***look for your books here...***]''')
