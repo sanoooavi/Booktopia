@@ -316,6 +316,7 @@ def get_publisher_translator(mysql: MySQLConnection) -> pd.DataFrame:
                           GROUP BY p.id, t.name) AS translator_counts ON p.id = translator_counts.publisher_id\
                 AND tp.name = translator_counts.translator_name\
              GROUP BY p.name\
+             HAVING MAX(translation_count) > 100\
              ORDER BY book_count desc"
     return pandas_sql(mysql, query)
 
@@ -336,5 +337,5 @@ def get_publisher_genres(mysql: MySQLConnection) -> pd.DataFrame:
                      GROUP BY t.id, p.id\
                     ) AS max_counts ON t.id = max_counts.tag_id AND p.id = max_counts.publisher_id\
                 GROUP BY t.name\
-                limit 20;"
+                HAVING MAX(book_count) >= 500"
     return pandas_sql(mysql, query)

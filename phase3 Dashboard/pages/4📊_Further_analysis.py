@@ -42,14 +42,21 @@ fig1 = px.bar(publisher_translator, x='publisher_name', y='book_count',
               labels={'book_count': 'Book Count', 'publisher_name': 'Publisher Name'},
               title="Publisher Translator Book Count")
 st.plotly_chart(fig1, use_container_width=True)
+st.markdown(
+    "As you can see, this plot shows the most translations by the publications which demonstrates "
+    "that how much did the publications preferred to translate good books except of creating them.", unsafe_allow_html=True)
 
 fig2 = px.bar(publisher_genres, x='genre_name', y='max_book_count',
               hover_data=['best_publisher_name'], color='max_book_count',
               labels={'max_book_count': 'Max Book Count', 'genre_name': 'Genre Name'},
               title="Publisher Genres Max Book Count")
 st.plotly_chart(fig2)
-
-st.markdown("<h6 style='text-align: left;'><strong>Publisher's Same Books Correlation</strong></h6>", unsafe_allow_html=True)
+st.markdown(
+    "As you can see, this plot shows the most common genres which are printed by the publications which absolutely "
+    "shows the demand of the buyers.",
+    unsafe_allow_html=True)
+st.markdown("<h6 style='text-align: left;'><strong>Publisher's Same Books Correlation</strong></h6>",
+            unsafe_allow_html=True)
 df = get_number_of_books_published_by_pubs(mysqldb)
 
 net = Network()
@@ -63,3 +70,6 @@ net.save_graph('network.html')
 with open("network.html", "r") as f:
     network_html = f.read()
 st.components.v1.html(network_html, width=800, height=600)
+st.markdown(
+    "As you can see, this graph shows the correlations between different publications. The correlation depends on the thickness of the edges between the nodes; the thicker the edge, the stronger the correlation. For instance, the \"Neyestan\" publication has a strong correlation with the \"Bonyad NahjolBalagheh\" publication, as they are both considered Persian Islamic religious publications.",
+    unsafe_allow_html=True)
