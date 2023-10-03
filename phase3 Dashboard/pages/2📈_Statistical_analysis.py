@@ -39,7 +39,7 @@ mysqldb=set_connection()
 page_publication_rel,price_publication_rel,price_score_rel,books_by_format=prepare_data(mysqldb)
 set_font()
 
-lottie_chart = json.load(open( "analysis2.json"))
+lottie_chart = json.load(open("analysis2.json"))
 col1,col2,col3 = st.columns([1,2,1])
 with col2:
     st_lottie(lottie_chart,speed=1, loop=True, quality="medium", width=700,height=200)

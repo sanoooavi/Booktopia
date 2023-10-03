@@ -1,12 +1,11 @@
 import streamlit as st
 from streamlit_extras.let_it_rain import rain
 from PIL import Image
-import matplotlib.pyplot as plt
 
 image = Image.open('attrs/logo.png')
 st.image(image)
 rain(
-    emoji="📙",
+    emoji="📗",
     font_size=30,
     falling_speed=9,
     animation_length="infinite",

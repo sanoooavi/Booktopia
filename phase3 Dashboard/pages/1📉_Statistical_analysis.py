@@ -39,7 +39,7 @@ def prepare_data(_mysqldb: MySQLConnection):
     return book_tags_df, publisher_book_df, books_by_solar_year, books_by_ad_year, top_10_writer_by_book_count, top_10_translator_by_book_count
 
 
-st.set_page_config(page_icon='📊', page_title='statistical analysis', layout='wide')
+st.set_page_config(page_icon='📉', page_title='statistical analysis', layout='wide')
 st.markdown("<h1 style='text-align: center;'>📊 Statistical analysis</h1>", unsafe_allow_html=True)
 
 set_font()

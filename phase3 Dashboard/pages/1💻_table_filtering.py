@@ -1,5 +1,6 @@
 import streamlit as st
 from model import *
+import pandas as pd
 
 st.markdown("<h1 style='text-align: center;'>💻 Table Filtering</h1>", unsafe_allow_html=True)
 try:
@@ -44,6 +45,7 @@ def prepare_df():
     #writer filtering
     writers_df=get_writer_df(mysqldb)
     writers_list=writers_df['name'].drop_duplicates().to_list()
+    all_books_writers=get_all_books_writers(mysqldb)
     #translator filtering
     translator_list=get_translators_name(mysqldb)
     all_books_translators=get_all_books_translators(mysqldb)
@@ -58,13 +60,13 @@ def prepare_df():
     all_books_with_tags_df=get_all_books_with_tags(mysqldb)
     return [price_list,tags_list,publishers_list,\
            writers_list,edition_list,language_list,persian_title_list,\
-           english_title_list,stock_status_list,score_list,all_books_with_tags_df,translator_list,all_books_translators]
+           english_title_list,stock_status_list,score_list,all_books_with_tags_df,translator_list,all_books_translators, all_books_writers]
 
     
 set_font()
 price_list,tags_list,publishers_list,writers_list\
 ,edition_list,language_list,persian_title_list,\
-english_title_list,stock_status_list,score_list,all_books_tags_df,translator_list,all_books_translators=prepare_df()
+english_title_list,stock_status_list,score_list,all_books_tags_df,translator_list,all_books_translators, all_books_writers=prepare_df()
 st.sidebar.markdown("Choose your filter: ")
 persian_title_box=st.sidebar.multiselect('Book Title',options=persian_title_list,default=None)
 tags_box=st.sidebar.multiselect('book_tags',options=tags_list,default=tags_list[0])
@@ -83,16 +85,14 @@ if search_button:
     
     query='select book_detail.site_id,book_detail.book_id,Persian_title,English_title,score,edition,\
        solar_publication_year,ad_publication_year,book_language,stock_status,price,\
-       discount,publisher.name as publisher,writer_page.name as writer,book_detail.page_number as page_number\
+       discount,publisher.name as publisher,book_detail.page_number as page_number\
             from book_detail\
             join price_history on price_history.book_id=book_detail.book_id\
             join publisher on publisher.id=book_detail.publisher_id\
             join book_summary on book_summary.site_id = book_detail.site_id\
-            join writer on writer.site_id=book_summary.site_id\
-            join writer_page on writer.writer_id = writer_page.writer_id\
             where price_history.price between '+str(price_range[0]) +' and '+str(price_range[1])\
             +' and book_detail.page_number between '+str(page_number_range[0]) +' and '+str(page_number_range[1])
-
+              
     if len(tags_box)!=0:
         book_tags_query='select book_tag.site_id, tags.name\
                     from (select site_id\
@@ -111,7 +111,7 @@ if search_button:
         from (select book_id\
             from translator\
                     inner join translator_page on translator_page.translator_id = translator.translator_id\
-         where translator_page.name in in("+str(translator_box).replace('[','').replace(']','')+")) as tbl\
+         where translator_page.name in ("+str(translator_box).replace('[','').replace(']','')+")) as tbl\
          inner join book_detail on book_detail.book_id = tbl.book_id\
          inner join translator on book_detail.book_id = translator.book_id\
          inner join translator_page on translator_page.translator_id = translator.translator_id"
@@ -119,6 +119,20 @@ if search_button:
     else:
         book_translator_df=all_books_translators.copy()
     book_translator_df.rename(columns={'name':'translator'},inplace=True)
+    
+    if len(writers_box)!=0:
+            book_writer_query="select book_detail.book_id, writer_page.name\
+        from (select site_id\
+            from writer\
+                    inner join writer_page on writer_page.writer_id = writer.writer_id\
+         where writer_page.name in ("+str(writers_box).replace('[','').replace(']','')+")) as tbl\
+         inner join book_detail on book_detail.site_id = tbl.site_id\
+         inner join writer on book_detail.site_id= writer.site_id\
+         inner join writer_page on writer_page.writer_id = writer.writer_id"
+            book_writer_df=get_search_result(mysqldb,book_writer_query)   
+    else:
+        book_writer_df=all_books_writers.copy()
+    book_writer_df.rename(columns={'name':'writer'},inplace=True)
 
 
     if len(persian_title_box)!=0:
@@ -132,13 +146,17 @@ if search_button:
         query+=' and stock_status in('+str(stock_status_box).replace('[','').replace(']','')+')'
     if len(publishers_box)!=0:
         query+=' and publisher.name in('+str(publishers_box).replace('[','').replace(']','')+')'
-    if len(writers_box)!=0:
-        query+=' and writer_page.name in('+str(writers_box).replace('[','').replace(']','')+')'
 
     searched_df=get_search_result(mysqldb,query)
+
     searched_df=pd.merge(book_tags_df,searched_df,how='inner')
-    searched_df=pd.merge(searched_df,book_translator_df,how='inner')
-   
+    merge_with_translator=pd.merge(searched_df,book_translator_df,how='inner')
+    if merge_with_translator.empty == False:
+        searched_df = merge_with_translator.copy()
+    merge_with_writer=pd.merge(searched_df,book_writer_df,how='inner')
+    if merge_with_writer.empty == False:
+        searched_df = merge_with_writer.copy()
+    
     grouped=searched_df.groupby('book_id')
     
     all_book_list=[]
@@ -164,29 +182,38 @@ if search_button:
         # Loop through each row in the group
         for index, row in group.iterrows():
             this_book_tag.append(row['tag_name'])
-            this_book_writer.append(row['writer'])
-            this_book_translator.append(row['translator'])
+            if 'writer' in group.columns:
+                this_book_writer.append(row['writer'])
+            if 'translator' in group.columns:
+                this_book_translator.append(row['translator'])
         book_dict['tags']=this_book_tag
         book_dict['writer']=list(set(this_book_writer))  
         book_dict['translator']=list(set(this_book_translator))
         all_book_list.append(book_dict.copy())
         # st.write(book_dict)
-
+    
     if(len(all_book_list)) == 0:
         st.markdown(''':rainbow[***No Book was Found with this Features***]''')
     else:
         for book in all_book_list:
+            st.subheader(book['english_title'])
             col1, col2 = st.columns(2)
+            writer_set = set(book['writer'])
+            writer_lst = list(writer_set)
+            writer_str = ''
+            for wr in range(len(writer_lst)-1):
+                writer_str += writer_lst[wr]
+                writer_str += ', '
+            writer_str += writer_lst[-1]
             with col1:
-                st.header(book['english_title'])
-                st.subheader(book['persian_title'])
-                st.write('Writer: ', book['writer'][0])
+                st.markdown(f"**{book['persian_title']}**")
+                st.write('Writer: ', writer_str)
                 st.write('Translator: ',str(book['translator']).replace('[','').replace(']','').replace("'",''))
                 st.write('Publisher: ', book['publisher'])
                 st.write(book['score'], f"{show_stars(book['score'])}")
-
-            ind_lst = ['','','','', 'Publication year:','Publication year:', 'Stock Status:', 'Price:', 'Discount:']
-            val_lst = ['','','','', book['solar_publication_year'], book['ad_publication_year'],
+            
+            ind_lst = ['Publication year:','Publication year:', 'Stock Status:', 'Price:', 'Discount:']
+            val_lst = [book['solar_publication_year'], book['ad_publication_year'],
                    book['status'], str(book['price'])+' toman', str(book['discount'])+'%']
             df = pd.DataFrame({'ind': ind_lst, 'val': val_lst})
             with col2:

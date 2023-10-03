@@ -18,7 +18,8 @@ st.markdown(f"""
     <h3 style='text-align: center;'>Start your career as a book seller here...</h3>
     """,unsafe_allow_html=True)
 # lottie_url_flower = "../qwPu6tqAZO.json"
-lottie_shop = json.load(open( "bookshop.json"))
+lottie_shop = json.load(open("../bookshop.json"))
+
 col1,col2,col3 = st.columns([1,2,1])
 with col2:
     st_lottie(lottie_shop,speed=5, loop=True, quality="medium", width=400,height=200)
@@ -44,7 +45,7 @@ elif criteria=='***Most books***':
 else:
     afforadble_books=get_best_books_by_budget(mysqldb,budget)
 st.dataframe(afforadble_books)
-st.markdown('You can find unique books based on ypur desired feature')
+st.markdown('You can find unique books based on your desired feature')
 unique = st.number_input( "Enter number of books you want here👇" , min_value=1, step=1)
 criteria_unique = st.radio(
     "**What's your purpose**",
