@@ -40,7 +40,7 @@ st.markdown(f"""<h4 style='text-align: Left;'>Price scatter chart based on book 
 fig1 = px.bar(publisher_translator, x='publisher_name', y='book_count',
               hover_data=['translator_name'], color='book_count',
               labels={'book_count': 'Book Count', 'publisher_name': 'Publisher Name'},
-              title="Publisher Translator Book Count")
+              title="Top Publisher Translates")
 st.plotly_chart(fig1, use_container_width=True)
 st.markdown(
     "As you can see, this plot shows the most translations by the publications which demonstrates "
@@ -49,7 +49,7 @@ st.markdown(
 fig2 = px.bar(publisher_genres, x='genre_name', y='max_book_count',
               hover_data=['best_publisher_name'], color='max_book_count',
               labels={'max_book_count': 'Max Book Count', 'genre_name': 'Genre Name'},
-              title="Publisher Genres Max Book Count")
+              title="Top Publisher Genres")
 st.plotly_chart(fig2)
 st.markdown(
     "As you can see, this plot shows the most common genres which are printed by the publications which absolutely "
